@@ -1,0 +1,72 @@
+{
+  "location": "quebec city, ca",
+  "intro": "software and web developer who values simplicity.",
+  "links": {
+    "email": "email",
+    "github": "github",
+    "linkedin": "linkedin"
+  },
+  "theme_title": "change theme",
+  "headings": {
+    "experience": "experience",
+    "projects": "projects",
+    "education": "education",
+    "distinctions": "honors & involvements"
+  },
+  "copyright": "antoine boudreau",
+  "contact": {
+    "email": "antoineboudreau@outlook.com",
+    "github": "https://github.com/dev-t0ny",
+    "linkedin": "https://www.linkedin.com/in/antoine-boudreau-467b2a28b/"
+  },
+  "experiences": [
+    {
+      "title": "founder",
+      "period": "feb 2025 – sep 2025",
+      "company": "fragment développement",
+      "duties": [
+        "co-founded and incorporated a web development company, technical management, and client relations",
+        "delivered custom projects (needs analysis, design, programming, deployment)"
+      ]
+    },
+    {
+      "title": "web developer",
+      "period": "nov 2023 – present",
+      "company": "ministère des transports et de la mobilité durable",
+      "duties": [
+        "maintained and added features to internal systems (asp.net, vb.net, javascript)",
+        "designed and modified complex databases (sql)",
+        "mentored and onboarded two new students"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "backdoor",
+      "description": "website for a local clothing brand.",
+      "tech": ["vue.js", "tailwind css"],
+      "url": "https://backdoor-project.com"
+    },
+    {
+      "name": "beau & bon",
+      "description": "e-commerce with workshop booking and products.",
+      "tech": ["next.js", "graphql", "shopify api"],
+      "url": "https://beauetbon.ca/"
+    },
+    {
+      "name": "les sablés de l'osti d'français",
+      "description": "e-commerce with product customization.",
+      "tech": ["next.js", "graphql", "shopify api"],
+      "url": "https://lessablesdelostidfrancais.com/"
+    }
+  ],
+  "education": [
+    "dec in computer science - cégep garneau (expected winter 2026), dec-bac pathway"
+  ],
+  "distinctions": [
+    "1st place, programming competition - cégep garneau (apr 2025)",
+    "participation, hackathon québec international (mar 2025)",
+    "participation, nasa space app challenge (oct 2025)",
+    "volunteering, cégep garneau open house (2025)"
+  ]
+}

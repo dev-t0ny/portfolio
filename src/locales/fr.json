@@ -1,0 +1,72 @@
+{
+  "location": "québec, ca",
+  "intro": "développeur web et logiciel qui aime la simplicité.",
+  "links": {
+    "email": "email",
+    "github": "github",
+    "linkedin": "linkedin"
+  },
+  "theme_title": "changer le thème",
+  "headings": {
+    "experience": "expérience",
+    "projects": "projets",
+    "education": "formation",
+    "distinctions": "distinctions & participations"
+  },
+  "copyright": "antoine boudreau",
+  "contact": {
+    "email": "antoineboudreau@outlook.com",
+    "github": "https://github.com/dev-t0ny",
+    "linkedin": "https://www.linkedin.com/in/antoine-boudreau-467b2a28b/"
+  },
+  "experiences": [
+    {
+      "title": "fondateur",
+      "period": "fév. 2025 – sept. 2025",
+      "company": "fragment développement",
+      "duties": [
+        "cofondé et incorporé une entreprise de développement web, gestion technique et relation client",
+        "réalisé des projets sur mesure (analyse des besoins, conception, programmation, déploiement)"
+      ]
+    },
+    {
+      "title": "développeur web",
+      "period": "nov. 2023 – présent",
+      "company": "ministère des transports et de la mobilité durable",
+      "duties": [
+        "maintenance et ajout de fonctionnalités sur des systèmes internes (asp.net, vb.net, javascript)",
+        "conception et modification de bases de données complexes (sql)",
+        "encadrement et accompagnement de deux nouveaux étudiants"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "backdoor",
+      "description": "site web pour une marque de vêtement locale.",
+      "tech": ["vue.js", "tailwind css"],
+      "url": "https://backdoor-project.com"
+    },
+    {
+      "name": "beau & bon",
+      "description": "e-commerce avec réservation d'atelier et produits.",
+      "tech": ["next.js", "graphql", "shopify api"],
+      "url": "https://beauetbon.ca/"
+    },
+    {
+      "name": "les sablés de l'osti d'français",
+      "description": "e-commerce avec personnalisation de produits.",
+      "tech": ["next.js", "graphql", "shopify api"],
+      "url": "https://lessablesdelostidfrancais.com/"
+    }
+  ],
+  "education": [
+    "dec en informatique - cégep garneau (fin prévue hiver 2026), cheminement dec-bac"
+  ],
+  "distinctions": [
+    "1re place, compétition de programmation - cégep garneau (avr. 2025)",
+    "participation, hackathon québec international (mars 2025)",
+    "participation, nasa space app challenge (octobre 2025)",
+    "bénévolat, portes ouvertes du cégep garneau (2025)"
+  ]
+}
