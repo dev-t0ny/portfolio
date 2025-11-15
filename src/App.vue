@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t, locale, tm } = useI18n();
@@ -28,6 +28,81 @@ const cycleTheme = () => {
     applyTheme(newTheme);
 };
 
+let titleTimeout = null;
+let taskIndex = 0;
+let charIndex = 0;
+let currentTitle = "";
+const typingSpeed = 120;
+const deletingSpeed = 80;
+const pauseDelay = 1500;
+const cursor = "█";
+
+const animationTasks = computed(() => [
+    { type: "type", text: t("copyright") },
+    { type: "pause", ms: pauseDelay },
+    { type: "delete", length: t("copyright").length },
+    { type: "type", text: t("title.dev") },
+    { type: "pause", ms: pauseDelay },
+    { type: "type", text: t("title.web") },
+    { type: "pause", ms: pauseDelay },
+    { type: "delete", length: t("title.web").length },
+    { type: "type", text: t("title.software") },
+    { type: "pause", ms: pauseDelay },
+    { type: "delete", length: (t("title.dev") + t("title.software")).length },
+    { type: "pause", ms: 500 },
+]);
+
+const runAnimationStep = () => {
+    if (titleTimeout) clearTimeout(titleTimeout);
+
+    const task = animationTasks.value[taskIndex];
+    let nextTimeout = 0;
+
+    if (task.type === "type") {
+        if (charIndex < task.text.length) {
+            currentTitle += task.text[charIndex];
+            charIndex++;
+            nextTimeout = typingSpeed;
+        } else {
+            taskIndex++;
+            charIndex = 0;
+            nextTimeout = 50;
+        }
+    } else if (task.type === "delete") {
+        if (charIndex < task.length) {
+            currentTitle = currentTitle.substring(0, currentTitle.length - 1);
+            charIndex++;
+            nextTimeout = deletingSpeed;
+        } else {
+            taskIndex++;
+            charIndex = 0;
+            nextTimeout = 50;
+        }
+    } else if (task.type === "pause") {
+        taskIndex++;
+        nextTimeout = task.ms;
+    }
+
+    if (taskIndex >= animationTasks.value.length) {
+        taskIndex = 0;
+        charIndex = 0;
+        currentTitle = "";
+    }
+
+    document.title = currentTitle + cursor;
+    titleTimeout = setTimeout(runAnimationStep, nextTimeout);
+};
+
+const startTitleAnimation = () => {
+    if (titleTimeout) clearTimeout(titleTimeout);
+    runAnimationStep();
+};
+
+const stopTitleAnimation = () => {
+    if (titleTimeout) clearTimeout(titleTimeout);
+    document.title = t("copyright");
+};
+
 onMounted(() => {
     const savedTheme =
         localStorage.getItem("theme") ||
@@ -39,6 +114,24 @@ onMounted(() => {
 
     const savedLocale = localStorage.getItem("locale") || "fr";
     locale.value = savedLocale;
+
+    startTitleAnimation();
+
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            stopTitleAnimation();
+        } else {
+            startTitleAnimation();
+        }
+    });
+});
+
+watch(locale, () => {
+    if (titleTimeout) clearTimeout(titleTimeout);
+    taskIndex = 0;
+    charIndex = 0;
+    currentTitle = "";
+    startTitleAnimation();
 });
 
 const contact = computed(() => tm("contact"));

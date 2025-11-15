@@ -14,21 +14,17 @@
     "distinctions": "distinctions & participations"
   },
   "copyright": "antoine boudreau",
+  "title": {
+    "dev": "dev",
+    "web": " web",
+    "software": " logiciel"
+  },
   "contact": {
     "email": "antoineboudreau@outlook.com",
     "github": "https://github.com/dev-t0ny",
     "linkedin": "https://www.linkedin.com/in/antoine-boudreau-467b2a28b/"
   },
   "experiences": [
-    {
-      "title": "fondateur",
-      "period": "fév. 2025 – sept. 2025",
-      "company": "fragment développement",
-      "duties": [
-        "cofondé et incorporé une entreprise de développement web, gestion technique et relation client",
-        "réalisé des projets sur mesure (analyse des besoins, conception, programmation, déploiement)"
-      ]
-    },
     {
       "title": "développeur web",
       "period": "nov. 2023 – présent",
@@ -37,6 +33,15 @@
         "maintenance et ajout de fonctionnalités sur des systèmes internes (asp.net, vb.net, javascript)",
         "conception et modification de bases de données complexes (sql)",
         "encadrement et accompagnement de deux nouveaux étudiants"
+      ]
+    },
+    {
+      "title": "fondateur",
+      "period": "fév. 2025 – sept. 2025",
+      "company": "fragment développement",
+      "duties": [
+        "cofondé et incorporé une entreprise de développement web, gestion technique et relation client",
+        "réalisé des projets sur mesure (analyse des besoins, conception, programmation, déploiement)"
       ]
     }
   ],
