@@ -4,7 +4,8 @@
   "links": {
     "email": "email",
     "github": "github",
-    "linkedin": "linkedin"
+    "linkedin": "linkedin",
+    "resume": "resume"
   },
   "theme_title": "change theme",
   "headings": {
@@ -22,7 +23,8 @@
   "contact": {
     "email": "antoineboudreau@outlook.com",
     "github": "https://github.com/dev-t0ny",
-    "linkedin": "https://www.linkedin.com/in/antoine-boudreau-467b2a28b/"
+    "linkedin": "https://www.linkedin.com/in/antoine-boudreau-467b2a28b/",
+    "resume_url": "/CV-AntoineBoudreau_2025.pdf"
   },
   "experiences": [
     {

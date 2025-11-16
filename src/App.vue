@@ -217,7 +217,7 @@ const distinctions = computed(() => tm("distinctions"));
                     </svg>
                     <span>{{ t("location") }}</span>
                 </div>
-                <p class="text-lg text-slate-700 dark:text-slate-300 max-w-3xl">
+                <p class="text-lg text-slate-700 dark:text-slate-300">
                     {{ t("intro") }}
                 </p>
 
@@ -240,6 +240,13 @@ const distinctions = computed(() => tm("distinctions"));
                         rel="noopener noreferrer"
                         class="text-sm text-slate-500 dark:text-slate-400 hover:underline transition-colors"
                         >{{ t("links.linkedin") }}</a
+                    >
+                    <a
+                        :href="contact.resume_url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-sm text-slate-500 dark:text-slate-400 hover:cursor-pointer hover:underline transition-colors"
+                        >{{ t("links.resume") }}</a
                     >
                 </nav>
             </section>
