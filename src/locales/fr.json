@@ -49,6 +49,12 @@
   ],
   "projects": [
     {
+      "name": "ludov",
+      "description": "participation à la refonte du site du laboratoire de recherche en jeu vidéo de Montréal",
+      "tech": ["react-router", "node.js", "express"],
+      "url": "https://www.ludov.ca/"
+    },
+    {
       "name": "backdoor",
       "description": "site web pour une marque de vêtement locale.",
       "tech": ["vue.js", "tailwind css"],

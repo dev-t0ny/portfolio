@@ -55,6 +55,12 @@
       "url": "https://backdoor-project.com"
     },
     {
+      "name": "ludov",
+      "description": "contributed to the redesign of the Montréal game research lab website",
+      "tech": ["react-router", "node.js", "express"],
+      "url": "https://www.ludov.ca/"
+    },
+    {
       "name": "beau & bon",
       "description": "e-commerce with workshop booking and products.",
       "tech": ["next.js", "graphql", "shopify api"],
