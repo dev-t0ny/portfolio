@@ -259,26 +259,59 @@ const distinctions = computed(() => tm("distinctions"));
                 >
                     {{ t("headings.experience") }}
                 </h2>
-                <div class="space-y-8">
-                    <div v-for="exp in experiences" :key="exp.title">
-                        <h3
-                            class="text-lg font-semibold text-stone-700 dark:text-amber-200"
+                <div class="space-y-12">
+                    <div
+                        v-for="exp in experiences"
+                        :key="exp.title"
+                        class="group"
+                    >
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3
+                                class="text-lg font-semibold text-stone-700 dark:text-amber-200"
+                            >
+                                {{ exp.title }}
+                            </h3>
+                            <span class="text-sm text-slate-500 font-mono">{{
+                                exp.period
+                            }}</span>
+                        </div>
+
+                        <p
+                            class="text-slate-700 dark:text-slate-400 mb-3 text-sm italic"
                         >
-                            {{ exp.title }}
-                        </h3>
-                        <span class="text-sm text-slate-500">{{
-                            exp.period
-                        }}</span>
-                        <p class="text-slate-700 dark:text-slate-400 mb-2 mt-1">
                             {{ exp.company }}
                         </p>
+
                         <ul
-                            class="list-disc list-outside ml-5 space-y-1 text-slate-700 dark:text-slate-400"
+                            class="list-disc list-outside ml-5 space-y-1 text-slate-700 dark:text-slate-400 mb-4"
                         >
                             <li v-for="duty in exp.duties" :key="duty">
                                 {{ duty }}
                             </li>
                         </ul>
+
+                        <div
+                            v-if="exp.recommendation"
+                            class="mt-4 pl-4 border-l-2 border-stone-300 dark:border-slate-700 text-sm"
+                        >
+                            <p
+                                class="text-slate-500 dark:text-slate-500 font-mono mb-1"
+                            >
+                                {{ exp.recommendation.text }}
+                            </p>
+                            <div
+                                class="flex gap-3 text-xs font-mono text-slate-400 dark:text-slate-600"
+                            >
+                                <span>— {{ exp.recommendation.author }}</span>
+                                <a
+                                    :href="exp.recommendation.url"
+                                    target="_blank"
+                                    class="underline hover:text-stone-600 dark:hover:text-amber-200 transition-colors"
+                                >
+                                    [{{ exp.recommendation.file }}]
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

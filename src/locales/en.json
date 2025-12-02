@@ -35,16 +35,13 @@
         "maintained and added features to internal systems (asp.net, vb.net, javascript)",
         "designed and modified complex databases (sql)",
         "mentored and onboarded two new students"
-      ]
-    },
-    {
-      "title": "founder",
-      "period": "feb 2025 – sep 2025",
-      "company": "fragment développement",
-      "duties": [
-        "co-founded and incorporated a web development company, technical management, and client relations",
-        "delivered custom projects (needs analysis, design, programming, deployment)"
-      ]
+      ],
+      "recommendation": {
+        "text": "\"Antoine distinguished himself by his reliability [...] and has always exceeded my expectations.\"",
+        "author": "Jean-Christophe Cusson, Team lead",
+        "file": "recommendation.pdf",
+        "url": "/Lettre-Recommandation_MTMD.pdf"
+      }
     }
   ],
   "projects": [

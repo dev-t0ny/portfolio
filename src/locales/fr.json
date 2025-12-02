@@ -35,7 +35,13 @@
         "maintenance et ajout de fonctionnalités sur des systèmes internes (asp.net, vb.net, javascript)",
         "conception et modification de bases de données complexes (sql)",
         "encadrement et accompagnement de deux nouveaux étudiants"
-      ]
+      ],
+      "recommendation": {
+        "text": "\"Antoine s'est distingué par sa fiabilité [...] et a toujours dépassé mes attentes.\"",
+        "author": "Jean-Christophe Cusson, Chef de secteur",
+        "file": "recommandation.pdf",
+        "url": "/Lettre-Recommandation_MTMD.pdf"
+      }
     },
     {
       "title": "fondateur",
