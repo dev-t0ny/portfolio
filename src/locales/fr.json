@@ -7,6 +7,9 @@
     "linkedin": "linkedin",
     "resume": "cv"
   },
+  "recommendation": {
+    "title": "lettre de recommandation"
+  },
   "theme_title": "changer le thème",
   "headings": {
     "experience": "expérience",
@@ -27,6 +30,17 @@
     "resume_url": "/CV-AntoineBoudreau_2025.pdf"
   },
   "experiences": [
+    {
+      "title": "développeur full-stack",
+      "period": "dec. 2025 – présent",
+      "company": "beau & bon",
+      "duties": [
+        "mandat complet de refonte du site web pour adapter le site à un haut traffic",
+        "gestion du front-end, back-end et devops (nuxt, node.js, express)",
+        "gestion de transactions avec stripe",
+        "tests du code"
+      ]
+    },
     {
       "title": "développeur web",
       "period": "nov. 2023 – dec. 2025",
@@ -56,25 +70,25 @@
   "projects": [
     {
       "name": "ludov",
-      "description": "participation à la refonte du site du laboratoire de recherche en jeu vidéo de Montréal",
+      "description": "projet de session réalisé avec le cégep garneau dans le cadre de ma technique. participation à la refonte du site du laboratoire de recherche en jeu vidéo de Montréal.",
       "tech": ["react-router", "node.js", "express"],
       "url": "https://www.ludov.ca/"
     },
     {
       "name": "backdoor",
-      "description": "site web pour une marque de vêtement locale.",
+      "description": "grande participation à la réalisation du site web pour la marque de vêtement locale de mon ami.",
       "tech": ["vue.js", "tailwind css"],
       "url": "https://backdoor-project.com"
     },
     {
       "name": "beau & bon",
-      "description": "e-commerce avec réservation d'atelier et produits.",
+      "description": "réalisation complète du site from scratch pour répondre à des besoins particuliers. e-commerce avec réservation d'atelier et produits.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://beauetbon.ca/"
     },
     {
       "name": "les sablés de l'osti d'français",
-      "description": "e-commerce avec personnalisation de produits.",
+      "description": "frontend next.js avec backend shopify. e-commerce avec personnalisation de produits.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://lessablesdelostidfrancais.com/"
     }

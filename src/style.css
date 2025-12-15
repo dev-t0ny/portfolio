@@ -1,13 +1,45 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @custom-variant dark (&:where(.dark, .dark *));
-::selection {
-    background-color: #44403c; /* text-stone-700 */
-    color: #fefce8; /* bg-amber-50 */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Sélection pour le mode SOMBRE (crème sur noir) */
+/* Selection styling */
+::selection {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
 .dark ::selection {
-    background-color: #fde68a; /* text-amber-200 */
-    color: #181a1b; /* votre fond sombre */
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
 }

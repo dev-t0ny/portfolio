@@ -5,30 +5,31 @@ const { posts } = useBlog();
 </script>
 
 <template>
-    <div class="max-w-2xl mx-auto">
-        <h1 class="text-3xl font-bold mb-8 text-stone-700 dark:text-amber-200">
+    <div>
+        <h1 class="text-5xl font-light mb-16 text-slate-900 dark:text-slate-100 tracking-tight">
             Journal
         </h1>
-        <ul class="space-y-6">
+        <ul class="space-y-12">
             <li v-for="post in posts" :key="post.slug">
                 <router-link
                     :to="{ name: 'post', params: { slug: post.slug } }"
-                    class="group block hover:bg-stone-100 dark:hover:bg-white/5 p-4 rounded-lg -mx-4 transition-colors"
+                    class="group block transition-all duration-200"
                 >
-                    <div class="flex justify-between items-baseline mb-1">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
                         <h2
-                            class="text-xl font-bold group-hover:text-amber-600 transition-colors"
+                            class="text-2xl font-light text-slate-900 dark:text-slate-100 group-hover:text-slate-600 dark:group-hover:text-slate-400 transition-colors duration-200"
                         >
                             {{ post.title }}
                         </h2>
                         <span
-                            class="text-xs text-slate-400 font-mono shrink-0 ml-4"
+                            class="text-xs text-slate-400 dark:text-slate-600 font-mono shrink-0"
                             >{{ post.date }}</span
                         >
                     </div>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
                         {{ post.description }}
                     </p>
+                    <div class="mt-3 h-px w-0 bg-slate-900 dark:bg-slate-100 transition-all duration-300 group-hover:w-16" />
                 </router-link>
             </li>
         </ul>

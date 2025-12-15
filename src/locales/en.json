@@ -7,6 +7,9 @@
     "linkedin": "linkedin",
     "resume": "resume"
   },
+  "recommendation": {
+    "title": "recommendation letter"
+  },
   "theme_title": "change theme",
   "headings": {
     "experience": "experience",
@@ -28,6 +31,17 @@
   },
   "experiences": [
     {
+      "title": "full-stack developer",
+      "period": "dec 2025 – present",
+      "company": "beau & bon",
+      "duties": [
+        "complete website redesign project to handle high traffic",
+        "front-end, back-end and devops management (nuxt, node.js, express)",
+        "stripe transaction management",
+        "code testing"
+      ]
+    },
+    {
       "title": "web developer",
       "period": "nov 2023 – dec 2025",
       "company": "ministère des transports et de la mobilité durable",
@@ -42,30 +56,39 @@
         "file": "recommendation.pdf",
         "url": "/Lettre-Recommandation_MTMD.pdf"
       }
+    },
+    {
+      "title": "founder",
+      "period": "feb 2025 – sept 2025",
+      "company": "fragment développement",
+      "duties": [
+        "co-founded and incorporated a web development company, technical management and client relations",
+        "delivered custom projects (needs analysis, design, programming, deployment)"
+      ]
     }
   ],
   "projects": [
     {
-      "name": "backdoor",
-      "description": "website for a local clothing brand.",
-      "tech": ["vue.js", "tailwind css"],
-      "url": "https://backdoor-project.com"
-    },
-    {
       "name": "ludov",
-      "description": "contributed to the redesign of the Montréal game research lab website",
+      "description": "semester project completed with cégep garneau as part of my technical program. contributed to the redesign of the Montréal game research lab website.",
       "tech": ["react-router", "node.js", "express"],
       "url": "https://www.ludov.ca/"
     },
     {
+      "name": "backdoor",
+      "description": "major contribution to the website development for my friend's local clothing brand.",
+      "tech": ["vue.js", "tailwind css"],
+      "url": "https://backdoor-project.com"
+    },
+    {
       "name": "beau & bon",
-      "description": "e-commerce with workshop booking and products.",
+      "description": "complete site development from scratch to meet specific needs. e-commerce with workshop booking and products.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://beauetbon.ca/"
     },
     {
       "name": "les sablés de l'osti d'français",
-      "description": "e-commerce with product customization.",
+      "description": "next.js frontend with shopify backend. e-commerce with product customization.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://lessablesdelostidfrancais.com/"
     }
