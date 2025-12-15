@@ -15,14 +15,14 @@ const { posts } = useBlog();
                     :to="{ name: 'post', params: { slug: post.slug } }"
                     class="group block transition-all duration-200"
                 >
-                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                    <div class="mb-3">
                         <h2
-                            class="text-2xl font-light text-slate-900 dark:text-slate-100 group-hover:text-slate-600 dark:group-hover:text-slate-400 transition-colors duration-200"
+                            class="text-2xl font-light text-slate-900 dark:text-slate-100 group-hover:text-slate-600 dark:group-hover:text-slate-400 transition-colors duration-200 mb-2"
                         >
                             {{ post.title }}
                         </h2>
                         <span
-                            class="text-xs text-slate-400 dark:text-slate-600 font-mono shrink-0"
+                            class="text-xs text-slate-400 dark:text-slate-600 font-mono"
                             >{{ post.date }}</span
                         >
                     </div>
