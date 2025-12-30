@@ -118,10 +118,10 @@ onUnmounted(() => {
             >
                 <span
                     :class="[
-                        'text-xs font-mono text-slate-400 dark:text-slate-500 transition-all duration-300',
+                        'text-xs font-mono text-slate-500 dark:text-slate-500 transition-all duration-300',
                         activeSection === section.id
-                            ? 'text-slate-900 dark:text-slate-200 scale-110'
-                            : 'group-hover:text-slate-600 dark:group-hover:text-slate-400',
+                            ? 'text-slate-800 dark:text-slate-200 scale-110'
+                            : 'group-hover:text-slate-700 dark:group-hover:text-slate-400',
                     ]"
                 >
                     {{ section.label }}
@@ -130,7 +130,7 @@ onUnmounted(() => {
                     :class="[
                         'w-1.5 h-1.5 rounded-full transition-all duration-300',
                         activeSection === section.id
-                            ? 'bg-slate-900 dark:bg-slate-200 w-2 h-2'
+                            ? 'bg-slate-700 dark:bg-slate-200 w-2 h-2'
                             : 'bg-slate-300 dark:bg-slate-600 group-hover:bg-slate-400 dark:group-hover:bg-slate-500',
                     ]"
                 />
@@ -138,4 +138,3 @@ onUnmounted(() => {
         </div>
     </nav>
 </template>
-

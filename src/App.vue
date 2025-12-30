@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
-import { RouterLink, RouterView, useRoute } from "vue-router";
-import SectionNav from "./components/SectionNav.vue";
+import { RouterLink, RouterView } from "vue-router";
 
 const { t, locale } = useI18n();
-const route = useRoute();
-
-const showSectionNav = computed(() => route.name === "home");
 
 const toggleLocale = () => {
     const newLocale = locale.value === "fr" ? "en" : "fr";
@@ -15,7 +11,7 @@ const toggleLocale = () => {
     localStorage.setItem("locale", newLocale);
 };
 
-const theme = ref("light");
+const theme = ref("dark");
 
 const applyTheme = (themeToApply: string) => {
     if (themeToApply === "dark") {
@@ -49,33 +45,22 @@ onMounted(() => {
 
 <template>
     <div
-        class="bg-white dark:bg-[#0a0a0a] text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-500 flex flex-col"
+        class="bg-[#f8f6f2] text-slate-700 dark:bg-[#111312] dark:text-slate-200 min-h-screen transition-colors duration-500 flex flex-col"
     >
         <header
-            class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-white/80 dark:bg-[#0a0a0a]/80 border-b border-slate-100 dark:border-slate-900/50 transition-all duration-300"
+            class="w-full border-b border-slate-200 dark:border-slate-800/60 transition-all duration-300"
         >
-            <div class="max-w-6xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center w-full">
-                <nav class="flex gap-8">
+            <div class="max-w-3xl mx-auto px-6 lg:px-12 py-6 flex justify-between items-center w-full">
+                <nav class="flex gap-6">
                     <RouterLink
                         to="/"
-                        class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 relative group"
-                        active-class="text-slate-900 dark:text-slate-100"
+                        class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 relative group"
+                        active-class="text-slate-800 dark:text-slate-200"
                     >
                         home
                         <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-900 dark:bg-slate-100 transition-all duration-300 group-hover:w-full"
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all duration-300 group-hover:w-full"
                             :class="{ 'w-full': $route.name === 'home' }"
-                        />
-                    </RouterLink>
-                    <RouterLink
-                        to="/blog"
-                        class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 relative group"
-                        active-class="text-slate-900 dark:text-slate-100"
-                    >
-                        blog
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-900 dark:bg-slate-100 transition-all duration-300 group-hover:w-full"
-                            :class="{ 'w-full': $route.name === 'blog' || $route.name === 'post' }"
                         />
                     </RouterLink>
                 </nav>
@@ -83,14 +68,13 @@ onMounted(() => {
                 <div class="flex items-center gap-3">
                     <button
                         @click="toggleLocale"
-                        class="text-xs font-mono text-slate-500 dark:text-slate-500 hover:text-slate-900 dark:hover:text-slate-300 transition-colors duration-200 px-2 py-1 rounded"
+                        class="text-xs font-mono text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 px-2 py-1 rounded"
                     >
                         {{ locale === "fr" ? "en" : "fr" }}
                     </button>
-
                     <button
                         @click="cycleTheme"
-                        class="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-200"
+                        class="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-all duration-200"
                         :title="t('theme_title') || 'Changer le thème'"
                     >
                         <span v-if="theme === 'light'" class="block">
@@ -128,8 +112,7 @@ onMounted(() => {
             </div>
         </header>
 
-        <main class="pt-20 max-w-3xl mx-auto px-6 lg:px-12 py-16 w-full flex-grow relative pb-24">
-            <SectionNav v-if="showSectionNav" />
+        <main class="max-w-3xl mx-auto px-6 lg:px-12 py-14 w-full flex-grow relative pb-20">
             <router-view v-slot="{ Component }">
                 <transition name="fade" mode="out-in">
                     <component :is="Component" />
@@ -138,9 +121,9 @@ onMounted(() => {
         </main>
 
         <footer
-            class="mt-auto border-t border-slate-100 dark:border-slate-900/50 py-8 max-w-6xl mx-auto w-full px-6 lg:px-12"
+            class="mt-auto border-t border-slate-200 dark:border-slate-800/60 py-8 max-w-3xl mx-auto w-full px-6 lg:px-12"
         >
-            <div class="text-center text-xs text-slate-400 dark:text-slate-600 font-mono">
+            <div class="text-center text-xs text-slate-500 dark:text-slate-400 font-mono">
                 © {{ new Date().getFullYear() }}
                 {{ t("copyright") || "Antoine Boudreau" }}
             </div>

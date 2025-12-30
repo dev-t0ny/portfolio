@@ -7,14 +7,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", "Book Antiqua", serif;
+    background-color: #f8f6f2;
+    color: #4b5563;
+}
+
+.dark body {
+    background-color: #111312;
+    color: #e2e8f0;
+}
+
 /* Selection styling */
 ::selection {
-    background-color: #e2e8f0;
-    color: #0f172a;
+    background-color: #e6e1d9;
+    color: #2f3134;
 }
 
 .dark ::selection {
-    background-color: #334155;
+    background-color: #2b2f2d;
     color: #f1f5f9;
 }
 
@@ -28,18 +39,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
+    background: #c8c1b8;
     border-radius: 4px;
 }
 
-.dark ::-webkit-scrollbar-thumb {
-    background: #334155;
-}
-
 ::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
-}
-
-.dark ::-webkit-scrollbar-thumb:hover {
-    background: #475569;
+    background: #b6b0a6;
 }
