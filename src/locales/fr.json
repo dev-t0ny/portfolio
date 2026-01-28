@@ -111,6 +111,9 @@
     "1re place, compétition de programmation - cégep garneau (avr. 2025)",
     "participation, hackathon québec international (mars 2025)",
     "participation, nasa space app challenge (octobre 2025)",
-    "bénévolat, portes ouvertes du cégep garneau (2025, 2026) — présenté le programme d'informatique, démonstrations de code en direct, répondu aux questions des futurs étudiants"
+    {
+      "title": "bénévolat, portes ouvertes du cégep garneau (2025, 2026)",
+      "description": "présenté le programme d'informatique, démonstrations de code en direct, répondu aux questions des futurs étudiants"
+    }
   ]
 }

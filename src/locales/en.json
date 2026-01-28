@@ -111,6 +111,9 @@
     "1st place, programming competition - cégep garneau (apr 2025)",
     "participation, hackathon québec international (mar 2025)",
     "participation, nasa space app challenge (oct 2025)",
-    "volunteering, cégep garneau open house (2025, 2026) — presented the cs program, live coding demos, answered prospective students' questions"
+    {
+      "title": "volunteering, cégep garneau open house (2025, 2026)",
+      "description": "presented the cs program, live coding demos, answered prospective students' questions"
+    }
   ]
 }

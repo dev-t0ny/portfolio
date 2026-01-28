@@ -10,7 +10,7 @@ const contact = computed(() => tm("contact") as any);
 const experiences = computed(() => tm("experiences") as any[]);
 const projects = computed(() => tm("projects") as any[]);
 const education = computed(() => tm("education") as string[]);
-const distinctions = computed(() => tm("distinctions") as string[]);
+const distinctions = computed(() => tm("distinctions") as (string | { title: string; description: string })[]);
 </script>
 
 <template>
@@ -208,9 +208,13 @@ const distinctions = computed(() => tm("distinctions") as string[]);
             <ul
                 class="space-y-3 text-slate-600 dark:text-slate-300"
             >
-                <li v-for="distinction in distinctions" :key="distinction" class="flex items-start gap-3">
+                <li v-for="(distinction, index) in distinctions" :key="index" class="flex items-start gap-3">
                     <span class="text-slate-300 dark:text-slate-600 mt-1.5">—</span>
-                    <span>{{ distinction }}</span>
+                    <div v-if="typeof distinction === 'object'">
+                        <span>{{ distinction.title }}</span>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 ml-4">{{ distinction.description }}</p>
+                    </div>
+                    <span v-else>{{ distinction }}</span>
                 </li>
             </ul>
         </section>
