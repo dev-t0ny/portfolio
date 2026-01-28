@@ -31,6 +31,17 @@
   },
   "experiences": [
     {
+      "title": "développeur full-stack (stage)",
+      "period": "jan 2026 – présent",
+      "company": "spektrum",
+      "duties": [
+        "gestion d'infrastructure devops avec aws (ses, s3, iam)",
+        "développement backend avec .net",
+        "développement frontend avec vue.js et react",
+        "implémentation de systèmes de gestion de contenu"
+      ]
+    },
+    {
       "title": "développeur full-stack",
       "period": "dec. 2025 – présent",
       "company": "beau & bon",
@@ -100,6 +111,6 @@
     "1re place, compétition de programmation - cégep garneau (avr. 2025)",
     "participation, hackathon québec international (mars 2025)",
     "participation, nasa space app challenge (octobre 2025)",
-    "bénévolat, portes ouvertes du cégep garneau (2025)"
+    "bénévolat, portes ouvertes du cégep garneau (2025, 2026) — présenté le programme d'informatique, démonstrations de code en direct, répondu aux questions des futurs étudiants"
   ]
 }

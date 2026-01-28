@@ -31,6 +31,17 @@
   },
   "experiences": [
     {
+      "title": "full-stack developer (internship)",
+      "period": "jan 2026 – present",
+      "company": "spektrum",
+      "duties": [
+        "devops infrastructure management with aws (ses, s3, iam)",
+        "backend development with .net",
+        "frontend development with vue.js and react",
+        "content management system implementation"
+      ]
+    },
+    {
       "title": "full-stack developer",
       "period": "dec 2025 – present",
       "company": "beau & bon",
@@ -100,6 +111,6 @@
     "1st place, programming competition - cégep garneau (apr 2025)",
     "participation, hackathon québec international (mar 2025)",
     "participation, nasa space app challenge (oct 2025)",
-    "volunteering, cégep garneau open house (2025)"
+    "volunteering, cégep garneau open house (2025, 2026) — presented the cs program, live coding demos, answered prospective students' questions"
   ]
 }
