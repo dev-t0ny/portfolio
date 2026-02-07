@@ -34,17 +34,20 @@
       "title": "développeur full-stack (stage)",
       "period": "jan 2026 – présent",
       "company": "spektrum",
+      "website": "https://spektrummedia.com",
       "duties": [
-        "gestion d'infrastructure devops avec aws (ses, s3, iam)",
-        "développement backend avec .net",
-        "développement frontend avec vue.js et react",
-        "implémentation de systèmes de gestion de contenu"
+        "gestion d'infrastructure cloud avec AWS (SES, S3, IAM) et Cloudflare",
+        "développement backend en C# avec .NET",
+        "développement frontend avec Vue.js",
+        "implémentation de systèmes de gestion de contenu",
+        "proposé et dirigé le développement de Homard Cloud, une plateforme d'hébergement d'IA — conception d'une infrastructure cloud évolutive avec Kubernetes"
       ]
     },
     {
       "title": "développeur full-stack",
       "period": "dec. 2025 – présent",
       "company": "beau & bon",
+      "website": "https://beauetbon.ca",
       "duties": [
         "mandat complet de refonte du site web pour adapter le site à un haut traffic",
         "gestion du front-end, back-end et devops (nuxt, node.js, express)",
@@ -56,6 +59,7 @@
       "title": "développeur web",
       "period": "nov. 2023 – dec. 2025",
       "company": "ministère des transports et de la mobilité durable",
+      "website": "https://www.transports.gouv.qc.ca",
       "duties": [
         "maintenance et ajout de fonctionnalités sur des systèmes internes (asp.net, vb.net, javascript)",
         "conception et modification de bases de données complexes (sql)",
@@ -72,6 +76,7 @@
       "title": "fondateur",
       "period": "fév. 2025 – sept. 2025",
       "company": "fragment développement",
+      "website": "https://www.fragmentdev.ca",
       "duties": [
         "cofondé et incorporé une entreprise de développement web, gestion technique et relation client",
         "réalisé des projets sur mesure (analyse des besoins, conception, programmation, déploiement)"
@@ -79,6 +84,12 @@
     }
   ],
   "projects": [
+    {
+      "name": "homard cloud",
+      "description": "plateforme d'hébergement géré pour assistants IA personnels. déploiement en 1 clic sur WhatsApp, Telegram, Slack, Discord, Signal et Teams.",
+      "tech": ["kubernetes", "cloudflare", "c#"],
+      "url": "https://homard.cloud"
+    },
     {
       "name": "ludov",
       "description": "projet de session réalisé avec le cégep garneau dans le cadre de ma technique. participation à la refonte du site du laboratoire de recherche en jeu vidéo de Montréal.",

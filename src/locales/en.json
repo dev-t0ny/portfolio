@@ -34,17 +34,20 @@
       "title": "full-stack developer (internship)",
       "period": "jan 2026 – present",
       "company": "spektrum",
+      "website": "https://spektrummedia.com",
       "duties": [
-        "devops infrastructure management with aws (ses, s3, iam)",
-        "backend development with .net",
-        "frontend development with vue.js and react",
-        "content management system implementation"
+        "cloud infrastructure management with AWS (SES, S3, IAM) and Cloudflare",
+        "backend development in C# with .NET",
+        "frontend development with Vue.js",
+        "content management system implementation",
+        "pitched and led the development of Homard Cloud, a managed AI hosting platform — built a scalable cloud infrastructure with Kubernetes"
       ]
     },
     {
       "title": "full-stack developer",
       "period": "dec 2025 – present",
       "company": "beau & bon",
+      "website": "https://beauetbon.ca",
       "duties": [
         "complete website redesign project to handle high traffic",
         "front-end, back-end and devops management (nuxt, node.js, express)",
@@ -56,6 +59,7 @@
       "title": "web developer",
       "period": "nov 2023 – dec 2025",
       "company": "ministère des transports et de la mobilité durable",
+      "website": "https://www.transports.gouv.qc.ca",
       "duties": [
         "maintained and added features to internal systems (asp.net, vb.net, javascript)",
         "designed and modified complex databases (sql)",
@@ -72,6 +76,7 @@
       "title": "founder",
       "period": "feb 2025 – sept 2025",
       "company": "fragment développement",
+      "website": "https://www.fragmentdev.ca",
       "duties": [
         "co-founded and incorporated a web development company, technical management and client relations",
         "delivered custom projects (needs analysis, design, programming, deployment)"
@@ -79,6 +84,12 @@
     }
   ],
   "projects": [
+    {
+      "name": "homard cloud",
+      "description": "managed hosting platform for personal AI assistants. 1-click deployment across WhatsApp, Telegram, Slack, Discord, Signal, and Teams.",
+      "tech": ["kubernetes", "cloudflare", "c#"],
+      "url": "https://homard.cloud"
+    },
     {
       "name": "ludov",
       "description": "semester project completed with cégep garneau as part of my technical program. contributed to the redesign of the Montréal game research lab website.",
