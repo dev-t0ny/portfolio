@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, watch, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { RouterLink, RouterView } from "vue-router";
 
@@ -40,6 +40,11 @@ onMounted(() => {
 
     const savedLocale = localStorage.getItem("locale") || "fr";
     locale.value = savedLocale;
+    document.documentElement.lang = savedLocale;
+});
+
+watch(locale, (lang) => {
+    document.documentElement.lang = lang;
 });
 </script>
 
@@ -68,6 +73,7 @@ onMounted(() => {
                 <div class="flex items-center gap-3">
                     <button
                         @click="toggleLocale"
+                        :aria-label="locale === 'fr' ? 'Switch to English' : 'Passer en français'"
                         class="text-xs font-mono text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 px-2 py-1 rounded"
                     >
                         {{ locale === "fr" ? "en" : "fr" }}
@@ -76,6 +82,7 @@ onMounted(() => {
                         @click="cycleTheme"
                         class="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-all duration-200"
                         :title="t('theme_title') || 'Changer le thème'"
+                        :aria-label="t('theme_title') || 'Changer le thème'"
                     >
                         <span v-if="theme === 'light'" class="block">
                             <svg

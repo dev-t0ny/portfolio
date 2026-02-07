@@ -103,6 +103,8 @@ const toggleExp = (index: number) => {
                     <!-- Row header — always visible -->
                     <button
                         @click="toggleExp(index)"
+                        :aria-expanded="openExp === index"
+                        :aria-controls="`exp-panel-${index}`"
                         class="w-full text-left py-5 flex items-start gap-5 group cursor-pointer"
                     >
                         <span
@@ -145,6 +147,8 @@ const toggleExp = (index: number) => {
 
                     <!-- Expandable detail panel -->
                     <div
+                        :id="`exp-panel-${index}`"
+                        role="region"
                         class="exp-panel overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
                         :class="openExp === index ? 'exp-panel-open' : 'exp-panel-closed'"
                     >
