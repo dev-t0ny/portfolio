@@ -85,6 +85,18 @@
   ],
   "projects": [
     {
+      "name": "luma",
+      "description": "iOS app for Quebec students. transforms course plans into smart action plans with grade tracking, study partner matching, and AI-powered planning. experimented with App Store deployment.",
+      "tech": ["swift", "ios"],
+      "url": "https://getluma.now/"
+    },
+    {
+      "name": "previsia",
+      "description": "consulting platform for condo syndicate compliance with Quebec's Loi 16. built during my internship at spektrum. managed cloudflare hosting, AWS SES, and CI/CD pipelines.",
+      "tech": ["react", "cloudflare", "aws ses", "ci/cd"],
+      "url": "https://previsia.ca/"
+    },
+    {
       "name": "homard cloud",
       "description": "managed hosting platform for personal AI assistants. 1-click deployment across WhatsApp, Telegram, Slack, Discord, Signal, and Teams.",
       "tech": ["kubernetes", "cloudflare", "c#"],

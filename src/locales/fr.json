@@ -85,6 +85,18 @@
   ],
   "projects": [
     {
+      "name": "luma",
+      "description": "application iOS pour les étudiants du Québec. transforme les plans de cours en plans d'action intelligents avec suivi des notes, jumelage de partenaires d'étude et planification propulsée par l'IA. expérimentation avec le déploiement sur l'App Store.",
+      "tech": ["swift", "ios"],
+      "url": "https://getluma.now/"
+    },
+    {
+      "name": "previsia",
+      "description": "plateforme de consultation pour la conformité des syndicats de copropriété à la Loi 16. développée lors de mon stage chez spektrum. gestion de l'hébergement cloudflare, AWS SES et pipelines CI/CD.",
+      "tech": ["react", "cloudflare", "aws ses", "ci/cd"],
+      "url": "https://previsia.ca/"
+    },
+    {
       "name": "homard cloud",
       "description": "plateforme d'hébergement géré pour assistants IA personnels. déploiement en 1 clic sur WhatsApp, Telegram, Slack, Discord, Signal et Teams.",
       "tech": ["kubernetes", "cloudflare", "c#"],
