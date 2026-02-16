@@ -88,13 +88,15 @@
       "name": "luma",
       "description": "iOS app for Quebec students. transforms course plans into smart action plans with grade tracking, study partner matching, and AI-powered planning. experimented with App Store deployment.",
       "tech": ["swift", "ios"],
-      "url": "https://getluma.now/"
+      "url": "https://getluma.now/",
+      "favicon": "/favicons/luma.png"
     },
     {
       "name": "previsia",
       "description": "consulting platform for condo syndicate compliance with Quebec's Loi 16. built during my internship at spektrum. managed cloudflare hosting, AWS SES, and CI/CD pipelines.",
       "tech": ["react", "cloudflare", "aws ses", "ci/cd"],
-      "url": "https://previsia.ca/"
+      "url": "https://previsia.ca/",
+      "favicon": "/favicons/previsia.png"
     },
     {
       "name": "homard cloud",

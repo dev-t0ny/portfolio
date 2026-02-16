@@ -88,13 +88,15 @@
       "name": "luma",
       "description": "application iOS pour les étudiants du Québec. transforme les plans de cours en plans d'action intelligents avec suivi des notes, jumelage de partenaires d'étude et planification propulsée par l'IA. expérimentation avec le déploiement sur l'App Store.",
       "tech": ["swift", "ios"],
-      "url": "https://getluma.now/"
+      "url": "https://getluma.now/",
+      "favicon": "/favicons/luma.png"
     },
     {
       "name": "previsia",
       "description": "plateforme de consultation pour la conformité des syndicats de copropriété à la Loi 16. développée lors de mon stage chez spektrum. gestion de l'hébergement cloudflare, AWS SES et pipelines CI/CD.",
       "tech": ["react", "cloudflare", "aws ses", "ci/cd"],
-      "url": "https://previsia.ca/"
+      "url": "https://previsia.ca/",
+      "favicon": "/favicons/previsia.png"
     },
     {
       "name": "homard cloud",

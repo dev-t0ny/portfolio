@@ -186,50 +186,50 @@ const toggleExp = (index: number) => {
             >
                 {{ t("headings.projects") }}
             </h2>
-            <ul class="space-y-10">
-                <li v-for="project in projects" :key="project.name" class="group">
-                    <div class="flex items-start gap-3">
-                        <div class="flex items-center gap-3">
-                            <img
-                                :src="`https://www.google.com/s2/favicons?domain=${encodeURIComponent(project.url)}&sz=64`"
-                                :alt="`${project.name} favicon`"
-                                class="h-5 w-5 [filter:drop-shadow(0_0_1px_rgba(0,0,0,0.45))_drop-shadow(0_0_1px_rgba(255,255,255,0.35))]"
-                                loading="lazy"
-                            />
-                            <h3
-                                class="text-lg font-normal text-slate-800 dark:text-slate-100 tracking-tight"
-                            >
-                                <a
-                                    :href="project.url"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-2 hover:text-slate-700 dark:hover:text-slate-200 transition-colors duration-200 relative"
-                                >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-slate-200 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800/60">
+                <a
+                    v-for="project in projects"
+                    :key="project.name"
+                    :href="project.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card group bg-white dark:bg-slate-950 p-6 flex flex-col justify-between transition-colors duration-300 hover:bg-slate-50 dark:hover:bg-slate-900/50"
+                >
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-2.5">
+                                <img
+                                    :src="project.favicon || `https://www.google.com/s2/favicons?domain=${encodeURIComponent(project.url)}&sz=64`"
+                                    :alt="`${project.name} favicon`"
+                                    class="h-5 w-5 [filter:drop-shadow(0_0_1px_rgba(0,0,0,0.45))_drop-shadow(0_0_1px_rgba(255,255,255,0.35))]"
+                                    loading="lazy"
+                                />
+                                <h3 class="text-lg font-normal text-slate-800 dark:text-slate-100 tracking-tight">
                                     {{ project.name }}
-                                    <span class="absolute -bottom-0.5 left-0 w-0 h-px bg-slate-700 dark:bg-slate-200 transition-all duration-300 group-hover:w-full" />
-                                    <svg class="w-3.5 h-3.5 text-slate-400 dark:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                    </svg>
-                                </a>
-                            </h3>
+                                </h3>
+                            </div>
+                            <svg
+                                class="w-3.5 h-3.5 text-slate-300 dark:text-slate-700 transition-all duration-300 group-hover:text-slate-500 dark:group-hover:text-slate-400 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
                         </div>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            {{ project.description }}
+                        </p>
                     </div>
-                    <p
-                        class="text-slate-600 dark:text-slate-300 mt-3 text-sm leading-relaxed"
-                    >
-                        {{ project.description }}
-                    </p>
-                    <div class="mt-5 flex flex-wrap gap-2">
+                    <div class="mt-5 flex flex-wrap gap-1.5">
                         <span
                             v-for="tech in project.tech"
                             :key="tech"
-                            class="text-xs bg-slate-100 dark:bg-slate-900/70 text-slate-600 dark:text-slate-300 px-2.5 py-1 rounded font-mono"
+                            class="text-[11px] bg-slate-100 dark:bg-slate-900/70 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded font-mono"
                         >
                             {{ tech }}
                         </span>
                     </div>
-                </li>
-            </ul>
+                </a>
+            </div>
         </section>
 
         <section id="education" class="scroll-mt-24">
