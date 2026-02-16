@@ -188,17 +188,14 @@ const toggleExp = (index: number) => {
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 border-t border-slate-200 dark:border-slate-800/60">
                 <a
-                    v-for="(project, index) in projects"
+                    v-for="project in projects"
                     :key="project.name"
                     :href="project.url"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="group border-b border-slate-200 dark:border-slate-800/60 py-5 flex items-start gap-5"
+                    class="group border-b border-slate-200 dark:border-slate-800/60 py-5"
                 >
-                    <span
-                        class="font-mono text-xs tabular-nums mt-1 shrink-0 text-slate-300 dark:text-slate-700 transition-colors duration-300 group-hover:text-slate-400 dark:group-hover:text-slate-500"
-                    >{{ String(index + 1).padStart(2, '0') }}</span>
-                    <div class="flex-1 min-w-0">
+                    <div class="min-w-0">
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex items-center gap-2.5">
                                 <img
