@@ -10,7 +10,7 @@ const contact = computed(() => tm("contact") as any);
 const experiences = computed(() => tm("experiences") as any[]);
 const projects = computed(() => tm("projects") as any[]);
 const education = computed(() => tm("education") as string[]);
-const distinctions = computed(() => tm("distinctions") as (string | { title: string; description: string })[]);
+const distinctions = computed(() => tm("distinctions") as any[]);
 
 const openExp = ref<number>(0);
 const toggleExp = (index: number) => {
