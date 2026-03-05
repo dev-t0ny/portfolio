@@ -53,23 +53,9 @@ watch(locale, (lang) => {
         class="bg-[#f8f6f2] text-slate-700 dark:bg-[#111312] dark:text-slate-200 min-h-screen transition-colors duration-500 flex flex-col"
     >
         <header
-            class="w-full border-b border-slate-200 dark:border-slate-800/60 transition-all duration-300"
+            class="w-full transition-all duration-300"
         >
-            <div class="max-w-3xl mx-auto px-6 lg:px-12 py-6 flex justify-between items-center w-full">
-                <nav class="flex gap-6">
-                    <RouterLink
-                        to="/"
-                        class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors duration-200 relative group"
-                        active-class="text-slate-800 dark:text-slate-200"
-                    >
-                        home
-                        <span
-                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all duration-300 group-hover:w-full"
-                            :class="{ 'w-full': $route.name === 'home' }"
-                        />
-                    </RouterLink>
-                </nav>
-
+            <div class="max-w-3xl mx-auto px-6 lg:px-12 py-6 flex justify-end items-center w-full">
                 <div class="flex items-center gap-3">
                     <button
                         @click="toggleLocale"

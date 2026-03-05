@@ -1,6 +1,6 @@
 {
   "location": "quebec city, ca",
-  "intro": "software and web developer who values simplicity.",
+  "intro": "i don't just code, i ship products.",
   "links": {
     "email": "email",
     "github": "github",
@@ -100,7 +100,7 @@
     },
     {
       "name": "homard cloud",
-      "description": "managed hosting platform for personal AI assistants. 1-click deployment across WhatsApp, Telegram, Slack, Discord, Signal, and Teams.",
+      "description": "managed hosting platform for personal AI assistants. 1-click deployment across WhatsApp, Telegram, Slack, Discord, Signal, and Teams. participant project in the osentreprendre challenge.",
       "tech": ["kubernetes", "cloudflare", "c#"],
       "url": "https://homard.cloud"
     },
@@ -118,13 +118,13 @@
     },
     {
       "name": "beau & bon",
-      "description": "complete site development from scratch to meet specific needs. e-commerce with workshop booking and products.",
+      "description": "complete site development from scratch to meet specific needs. e-commerce with workshop booking and products. handles hundreds of transactions per month with 1k+ unique visitors per day.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://beauetbon.ca/"
     },
     {
       "name": "les sablés de l'osti d'français",
-      "description": "next.js frontend with shopify backend. e-commerce with product customization.",
+      "description": "next.js frontend with shopify backend. e-commerce with product customization. active online store in production.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://lessablesdelostidfrancais.com/"
     }
@@ -134,8 +134,26 @@
   ],
   "distinctions": [
     "1st place, programming competition - cégep garneau (apr 2025)",
-    "participation, hackathon québec international (mar 2025)",
-    "participation, nasa space app challenge (oct 2025)",
+    {
+      "text": "participation, {0} hackathon (mar 2025)",
+      "linkLabel": "québec international",
+      "url": "https://www.quebecinternational.ca/fr/nouvelles/hackathon-etudiant-2025-une-journee-d-innovation-et-de-travail-collaboratif"
+    },
+    {
+      "text": "participation, {0} (oct 2025)",
+      "linkLabel": "nasa space apps challenge",
+      "url": "https://www.spaceappschallenge.org/2025/"
+    },
+    {
+      "text": "participation, {0} challenge — student entrepreneurship category",
+      "linkLabel": "osentreprendre",
+      "url": "https://www.osentreprendre.quebec/defi-osentreprendre/volet/etudiant/"
+    },
+    {
+      "text": "participation, {0} — botpress hackathon, québec city (mar 2026)",
+      "linkLabel": "bp hacks",
+      "url": "https://bphacks.com/"
+    },
     {
       "title": "volunteering, cégep garneau open house (2025, 2026)",
       "description": "presented the cs program, live coding demos, answered prospective students' questions"

@@ -186,7 +186,7 @@ const toggleExp = (index: number) => {
             >
                 {{ t("headings.projects") }}
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 border-t border-slate-200 dark:border-slate-800/60">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10 border-t border-slate-200 dark:border-slate-800/60">
                 <a
                     v-for="project in projects"
                     :key="project.name"
@@ -259,9 +259,18 @@ const toggleExp = (index: number) => {
             >
                 <li v-for="(distinction, index) in distinctions" :key="index" class="flex items-start gap-3">
                     <span class="text-slate-300 dark:text-slate-600 mt-1.5">—</span>
-                    <div v-if="typeof distinction === 'object'">
+                    <div v-if="typeof distinction === 'object' && distinction.linkLabel">
+                        <span>{{ distinction.text.split('{0}')[0] }}</span><a
+                            :href="distinction.url"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-slate-800 dark:text-slate-200 underline underline-offset-3 decoration-slate-400 dark:decoration-slate-500 hover:decoration-slate-600 dark:hover:decoration-slate-300 transition-colors duration-200"
+                        >{{ distinction.linkLabel }}</a><span>{{ distinction.text.split('{0}')[1] }}</span>
+                        <p v-if="distinction.description" class="text-sm text-slate-500 dark:text-slate-400 mt-1 ml-4">{{ distinction.description }}</p>
+                    </div>
+                    <div v-else-if="typeof distinction === 'object'">
                         <span>{{ distinction.title }}</span>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 ml-4">{{ distinction.description }}</p>
+                        <p v-if="distinction.description" class="text-sm text-slate-500 dark:text-slate-400 mt-1 ml-4">{{ distinction.description }}</p>
                     </div>
                     <span v-else>{{ distinction }}</span>
                 </li>

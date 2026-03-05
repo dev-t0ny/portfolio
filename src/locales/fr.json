@@ -1,6 +1,6 @@
 {
   "location": "québec, ca",
-  "intro": "développeur web et logiciel qui aime la simplicité.",
+  "intro": "je fais pas du code, je fais des produits.",
   "links": {
     "email": "email",
     "github": "github",
@@ -100,7 +100,7 @@
     },
     {
       "name": "homard cloud",
-      "description": "plateforme d'hébergement géré pour assistants IA personnels. déploiement en 1 clic sur WhatsApp, Telegram, Slack, Discord, Signal et Teams.",
+      "description": "plateforme d'hébergement géré pour assistants IA personnels. déploiement en 1 clic sur WhatsApp, Telegram, Slack, Discord, Signal et Teams. projet participant au défi osentreprendre.",
       "tech": ["kubernetes", "cloudflare", "c#"],
       "url": "https://homard.cloud"
     },
@@ -118,13 +118,13 @@
     },
     {
       "name": "beau & bon",
-      "description": "réalisation complète du site from scratch pour répondre à des besoins particuliers. e-commerce avec réservation d'atelier et produits.",
+      "description": "réalisation complète du site from scratch pour répondre à des besoins particuliers. e-commerce avec réservation d'atelier et produits. gère des centaines de transactions par mois avec 1k+ visiteurs uniques par jour.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://beauetbon.ca/"
     },
     {
       "name": "les sablés de l'osti d'français",
-      "description": "frontend next.js avec backend shopify. e-commerce avec personnalisation de produits.",
+      "description": "frontend next.js avec backend shopify. e-commerce avec personnalisation de produits. boutique en ligne active en production.",
       "tech": ["next.js", "graphql", "shopify api"],
       "url": "https://lessablesdelostidfrancais.com/"
     }
@@ -134,8 +134,26 @@
   ],
   "distinctions": [
     "1re place, compétition de programmation - cégep garneau (avr. 2025)",
-    "participation, hackathon québec international (mars 2025)",
-    "participation, nasa space app challenge (octobre 2025)",
+    {
+      "text": "participation, hackathon {0} (mars 2025)",
+      "linkLabel": "québec international",
+      "url": "https://www.quebecinternational.ca/fr/nouvelles/hackathon-etudiant-2025-une-journee-d-innovation-et-de-travail-collaboratif"
+    },
+    {
+      "text": "participation, {0} (octobre 2025)",
+      "linkLabel": "nasa space apps challenge",
+      "url": "https://www.spaceappschallenge.org/2025/"
+    },
+    {
+      "text": "participation, défi {0} — volet entrepreneuriat étudiant",
+      "linkLabel": "osentreprendre",
+      "url": "https://www.osentreprendre.quebec/defi-osentreprendre/volet/etudiant/"
+    },
+    {
+      "text": "participation, {0} — hackathon botpress, québec (mars 2026)",
+      "linkLabel": "bp hacks",
+      "url": "https://bphacks.com/"
+    },
     {
       "title": "bénévolat, portes ouvertes du cégep garneau (2025, 2026)",
       "description": "présenté le programme d'informatique, démonstrations de code en direct, répondu aux questions des futurs étudiants"
