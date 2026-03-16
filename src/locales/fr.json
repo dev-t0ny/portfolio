@@ -150,9 +150,11 @@
       "url": "https://www.osentreprendre.quebec/defi-osentreprendre/volet/etudiant/"
     },
     {
-      "text": "participation, {0} — hackathon botpress, québec (mars 2026)",
+      "text": "1re place, {0} — hackathon botpress, québec (mars 2026)",
       "linkLabel": "bp hacks",
-      "url": "https://bphacks.com/"
+      "url": "https://bphacks.com/",
+      "secondaryLinkLabel": "voir le post",
+      "secondaryUrl": "https://www.linkedin.com/posts/antoine-boudreau-467b2a28b_bphacks-botpress-hackathon-activity-7439014480337911808-7WXU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ33A8BBhSiZLASft5H3w7s9mFLLsEVhpI"
     },
     {
       "title": "bénévolat, portes ouvertes du cégep garneau (2025, 2026)",
