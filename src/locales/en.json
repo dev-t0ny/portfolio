@@ -85,6 +85,13 @@
   ],
   "projects": [
     {
+      "name": "dm while sleep",
+      "description": "AI communication agent for Instagram. responds to DMs 24/7 in your voice, scores leads in real-time, and closes sales autonomously. integrates Stripe payments and Calendly booking directly in conversations. supports custom MCP servers for full business automation through DMs.",
+      "tech": ["ai agents", "instagram api", "stripe", "mcp"],
+      "url": "https://dmwhilesleep.com/",
+      "favicon": "/favicons/dmwhilesleep.svg"
+    },
+    {
       "name": "luma",
       "description": "iOS app for Quebec students. transforms course plans into smart action plans with grade tracking, study partner matching, and AI-powered planning. experimented with App Store deployment.",
       "tech": ["swift", "ios"],
