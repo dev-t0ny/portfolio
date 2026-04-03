@@ -53,16 +53,8 @@ const toggleProjectSortMode = () => {
     }
 };
 
-const shouldDisplayProjectPeriod = (projectIndex: number) => {
-    if (projectSortMode.value !== "chronology") {
-        return false;
-    }
-
-    return (
-        projectIndex === 0 ||
-        sortedProjects.value[projectIndex - 1]?.period !==
-            sortedProjects.value[projectIndex]?.period
-    );
+const shouldDisplayProjectPeriod = (_projectIndex: number) => {
+    return false;
 };
 
 const sortedProjects = computed(() => {
@@ -72,7 +64,7 @@ const sortedProjects = computed(() => {
         const baseSort =
             projectSortMode.value === "chronology"
                 ? left.order - right.order
-                : left.difficultyScore - right.difficultyScore;
+                : left.impactScore - right.impactScore;
 
         if (baseSort !== 0) {
             return baseSort * direction;
