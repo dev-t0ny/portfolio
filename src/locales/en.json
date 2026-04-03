@@ -117,12 +117,12 @@
     },
     {
       "order": 3,
-      "name": "beau & bon v1",
+      "name": "beau & bon",
       "period": "2025",
       "impact": "prod e-commerce, high traffic",
       "impactScore": 4,
       "difficultyScore": 3,
-      "description": "first version of Beau & Bon built on Vercel Commerce and Shopify. the design was not my strongest work yet, but the site worked, processed orders, and handled traffic.",
+      "description": "Beau & Bon e-commerce site built on Vercel Commerce and Shopify. live in production, processing orders and handling traffic.",
       "tech": ["next.js", "vercel commerce", "shopify api"],
       "url": "https://beauetbon.ca/"
     },

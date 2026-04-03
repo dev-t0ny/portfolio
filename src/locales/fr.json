@@ -117,12 +117,12 @@
     },
     {
       "order": 3,
-      "name": "beau & bon v1",
+      "name": "beau & bon",
       "period": "2025",
       "impact": "e-commerce prod, haut trafic",
       "impactScore": 4,
       "difficultyScore": 3,
-      "description": "première version du site Beau & Bon bâtie sur Vercel Commerce et Shopify. le design n'était pas mon plus fort, mais le site marchait, encaissait les commandes et tenait le trafic.",
+      "description": "site e-commerce Beau & Bon bâti sur Vercel Commerce et Shopify. site en production, encaisse les commandes et tient le trafic.",
       "tech": ["next.js", "vercel commerce", "shopify api"],
       "url": "https://beauetbon.ca/"
     },
