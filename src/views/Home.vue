@@ -53,8 +53,13 @@ const toggleProjectSortMode = () => {
     }
 };
 
-const shouldDisplayProjectPeriod = (_projectIndex: number) => {
-    return false;
+const shouldDisplayProjectPeriod = (projectIndex: number) => {
+    if (projectSortMode.value !== "chronology") return false;
+    if (projectIndex === 0) return false;
+    return (
+        sortedProjects.value[projectIndex - 1]?.period !==
+        sortedProjects.value[projectIndex]?.period
+    );
 };
 
 const sortedProjects = computed(() => {
@@ -376,32 +381,16 @@ onBeforeUnmount(() => {
 
             <div
                 v-if="projectSortMode === 'chronology'"
-                class="sticky top-[25vh] z-10 bg-[#f8f6f2]/95 py-3 backdrop-blur-sm dark:bg-[#111312]/95"
+                class="mb-2"
             >
-                <div class="flex items-center gap-4">
-                    <button
-                        v-for="period in uniqueProjectPeriods"
-                        :key="period"
-                        type="button"
-                        @click="activeProjectPeriod = period"
-                        :class="[
-                            'font-mono text-xs uppercase tracking-[0.24em] transition-all duration-300 relative pb-1',
-                            activeProjectPeriod === period
-                                ? 'text-slate-800 dark:text-slate-100'
-                                : 'text-slate-300 dark:text-slate-700 hover:text-slate-400 dark:hover:text-slate-500',
-                        ]"
+                <Transition name="project-period" mode="out-in">
+                    <p
+                        :key="activeProjectPeriod"
+                        class="font-mono text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500"
                     >
-                        {{ period }}
-                        <span
-                            :class="[
-                                'absolute bottom-0 left-0 h-px transition-all duration-300',
-                                activeProjectPeriod === period
-                                    ? 'w-full bg-slate-800 dark:bg-slate-100'
-                                    : 'w-0 bg-slate-400 dark:bg-slate-500',
-                            ]"
-                        />
-                    </button>
-                </div>
+                        {{ activeProjectPeriod }}
+                    </p>
+                </Transition>
             </div>
 
             <TransitionGroup
@@ -564,6 +553,23 @@ onBeforeUnmount(() => {
 .exp-panel-closed {
     grid-template-rows: 0fr;
     opacity: 0;
+}
+
+.project-period-enter-active,
+.project-period-leave-active {
+    transition:
+        opacity 250ms ease,
+        transform 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-period-enter-from {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.project-period-leave-to {
+    opacity: 0;
+    transform: translateY(-8px);
 }
 
 .project-card-move {
