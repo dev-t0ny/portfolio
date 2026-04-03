@@ -116,9 +116,22 @@ watch(locale, (lang) => {
         <footer
             class="mt-auto border-t border-slate-200 dark:border-slate-800/60 py-8 max-w-3xl mx-auto w-full px-6 lg:px-12"
         >
-            <div class="text-center text-xs text-slate-500 dark:text-slate-400 font-mono">
-                © {{ new Date().getFullYear() }}
-                {{ t("copyright") || "Antoine Boudreau" }}
+            <div
+                class="grid grid-cols-[1fr_auto_1fr] items-center text-xs text-slate-500 dark:text-slate-400 font-mono"
+            >
+                <div aria-hidden="true" />
+                <div class="text-center">
+                    © {{ new Date().getFullYear() }}
+                    {{ t("copyright") || "Antoine Boudreau" }}
+                </div>
+                <a
+                    href="https://cellar.antoineboudreau.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="justify-self-end transition-colors duration-200 hover:text-slate-700 dark:hover:text-slate-200"
+                >
+                    enter my cellar
+                </a>
             </div>
         </footer>
     </div>

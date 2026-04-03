@@ -17,6 +17,14 @@
     "education": "formation",
     "distinctions": "distinctions & participations"
   },
+  "projects_intro": "du premier site vitrine aux agents autonomes self-hosted: une timeline de ce que j'ai ship, en prod ou en prototype, et de comment mon scope a monté.",
+  "project_sort": {
+    "chronology": "chrono",
+    "difficulty": "difficulté",
+    "toggle_mode": "changer le critère de tri",
+    "ascending": "ordre croissant",
+    "descending": "ordre décroissant"
+  },
   "copyright": "antoine boudreau",
   "title": {
     "dev": "dev",
@@ -27,7 +35,7 @@
     "email": "antoineboudreau@outlook.com",
     "github": "https://github.com/dev-t0ny",
     "linkedin": "https://www.linkedin.com/in/antoine-boudreau-467b2a28b/",
-    "resume_url": "/CV-AntoineBoudreau_2025.pdf"
+    "resume_url": "/CV-AntoineBoudreau_2026.pdf"
   },
   "experiences": [
     {
@@ -85,55 +93,118 @@
   ],
   "projects": [
     {
+      "order": 1,
+      "name": "fragment développement",
+      "period": "2025",
+      "impact": "site vitrine",
+      "impactScore": 1,
+      "difficultyScore": 2,
+      "description": "premier site de ma compagnie de développement web: vitrine next.js, direction visuelle autour de la marque Fragment, présentation des services/processus/équipe et formulaire de contact.",
+      "tech": ["next.js", "tailwind css", "figma"],
+      "url": "https://fragmentdev.ca/",
+      "favicon": "https://fragmentdev.ca/favicon.ico"
+    },
+    {
+      "order": 2,
+      "name": "les sablés de l'osti d'français",
+      "period": "2025",
+      "impact": "e-commerce actif, trafic + paiements",
+      "impactScore": 4,
+      "difficultyScore": 3,
+      "description": "premier e-commerce en vraie prod: frontend next.js branché sur Shopify, personnalisation de produits, boutique encore active aujourd'hui avec des centaines de visiteurs par jour.",
+      "tech": ["next.js", "graphql", "shopify api"],
+      "url": "https://lessablesdelostidfrancais.com/"
+    },
+    {
+      "order": 3,
+      "name": "beau & bon v1",
+      "period": "2025",
+      "impact": "e-commerce prod, haut trafic",
+      "impactScore": 4,
+      "difficultyScore": 3,
+      "description": "première version du site Beau & Bon bâtie sur Vercel Commerce et Shopify. le design n'était pas mon plus fort, mais le site marchait, encaissait les commandes et tenait le trafic.",
+      "tech": ["next.js", "vercel commerce", "shopify api"],
+      "url": "https://beauetbon.ca/"
+    },
+    {
+      "order": 4,
+      "name": "ludov",
+      "period": "2025",
+      "impact": "projet académique, site de lab",
+      "impactScore": 1,
+      "difficultyScore": 2,
+      "description": "projet de session réalisé avec le cégep garneau dans le cadre de ma technique. participation à la refonte du site du laboratoire de recherche en jeu vidéo de Montréal.",
+      "tech": ["react-router", "node.js", "express"],
+      "url": "https://www.ludov.ca/"
+    },
+    {
+      "order": 5,
+      "name": "backdoor",
+      "period": "2025",
+      "impact": "streetwear drop, vraies ventes",
+      "impactScore": 4,
+      "difficultyScore": 3,
+      "description": "grosse participation au site e-commerce d'une marque locale de vêtements. site en prod, utilisé pour des drops, avec un vrai volume de ventes qui passait par la plateforme.",
+      "tech": ["vue.js", "tailwind css"],
+      "url": "https://backdoor-project.com"
+    },
+    {
+      "order": 6,
+      "name": "luma",
+      "period": "2025",
+      "impact": "prototype iOS, 0 prod",
+      "impactScore": 1,
+      "difficultyScore": 4,
+      "description": "application iOS pour les étudiants du Québec. transforme les plans de cours en plans d'action intelligents avec suivi des notes, jumelage de partenaires d'étude et planification propulsée par l'IA.",
+      "tech": ["swift", "ios"],
+      "url": "https://getluma.now/",
+      "favicon": "/favicons/luma.png"
+    },
+    {
+      "order": 7,
+      "name": "previsia",
+      "period": "2026",
+      "impact": "produit B2B spektrum",
+      "impactScore": 2,
+      "difficultyScore": 3,
+      "description": "plateforme de consultation pour la conformité des syndicats de copropriété à la Loi 16. développée chez spektrum avec gestion Cloudflare, AWS SES et pipelines CI/CD.",
+      "tech": ["react", "cloudflare", "aws ses", "ci/cd"],
+      "url": "https://previsia.ca/",
+      "favicon": "/favicons/previsia.png"
+    },
+    {
+      "order": 8,
+      "name": "homard cloud",
+      "period": "2026",
+      "impact": "R&D project",
+      "impactScore": 2,
+      "difficultyScore": 5,
+      "description": "plateforme d'hébergement géré pour assistants IA personnels avec déploiement 1 clic sur WhatsApp, Telegram, Slack, Discord, Signal et Teams. projet pitché au défi osentreprendre et testé par quelques vrais utilisateurs.",
+      "tech": ["kubernetes", "cloudflare", "c#"],
+      "url": "https://homard.cloud"
+    },
+    {
+      "order": 9,
       "name": "dm while sleep",
+      "period": "2026",
+      "impact": "pain point actuel: approbation API Meta",
+      "impactScore": 3,
+      "difficultyScore": 4,
       "description": "agent de communication IA pour Instagram. répond aux DM 24/7 dans ton style, score les leads en temps réel et close des ventes de façon autonome. intègre les paiements Stripe et la réservation Calendly directement dans les conversations. supporte les serveurs MCP pour automatiser toute ta business à travers les DM.",
       "tech": ["ai agents", "instagram api", "stripe", "mcp"],
       "url": "https://dmwhilesleep.com/",
       "favicon": "/favicons/dmwhilesleep.svg"
     },
     {
-      "name": "luma",
-      "description": "application iOS pour les étudiants du Québec. transforme les plans de cours en plans d'action intelligents avec suivi des notes, jumelage de partenaires d'étude et planification propulsée par l'IA. expérimentation avec le déploiement sur l'App Store.",
-      "tech": ["swift", "ios"],
-      "url": "https://getluma.now/",
-      "favicon": "/favicons/luma.png"
-    },
-    {
-      "name": "previsia",
-      "description": "plateforme de consultation pour la conformité des syndicats de copropriété à la Loi 16. développée lors de mon stage chez spektrum. gestion de l'hébergement cloudflare, AWS SES et pipelines CI/CD.",
-      "tech": ["react", "cloudflare", "aws ses", "ci/cd"],
-      "url": "https://previsia.ca/",
-      "favicon": "/favicons/previsia.png"
-    },
-    {
-      "name": "homard cloud",
-      "description": "plateforme d'hébergement géré pour assistants IA personnels. déploiement en 1 clic sur WhatsApp, Telegram, Slack, Discord, Signal et Teams. projet participant au défi osentreprendre.",
-      "tech": ["kubernetes", "cloudflare", "c#"],
-      "url": "https://homard.cloud"
-    },
-    {
-      "name": "ludov",
-      "description": "projet de session réalisé avec le cégep garneau dans le cadre de ma technique. participation à la refonte du site du laboratoire de recherche en jeu vidéo de Montréal.",
-      "tech": ["react-router", "node.js", "express"],
-      "url": "https://www.ludov.ca/"
-    },
-    {
-      "name": "backdoor",
-      "description": "grande participation à la réalisation du site web pour la marque de vêtement locale de mon ami.",
-      "tech": ["vue.js", "tailwind css"],
-      "url": "https://backdoor-project.com"
-    },
-    {
-      "name": "beau & bon",
-      "description": "réalisation complète du site from scratch pour répondre à des besoins particuliers. e-commerce avec réservation d'atelier et produits. gère des centaines de transactions par mois avec 1k+ visiteurs uniques par jour.",
-      "tech": ["next.js", "graphql", "shopify api"],
-      "url": "https://beauetbon.ca/"
-    },
-    {
-      "name": "les sablés de l'osti d'français",
-      "description": "frontend next.js avec backend shopify. e-commerce avec personnalisation de produits. boutique en ligne active en production.",
-      "tech": ["next.js", "graphql", "shopify api"],
-      "url": "https://lessablesdelostidfrancais.com/"
+      "order": 10,
+      "name": "virgil",
+      "period": "2026",
+      "impact": "PRs automatiques, prod interne",
+      "impactScore": 3,
+      "difficultyScore": 5,
+      "description": "agent autonome de correction de bugs et de monitoring conçu et déployé chez spektrum. surveille GlitchTip, analyse les erreurs de prod avec un LLM self-hosted, génère des PR Bitbucket, évalue le risque des correctifs et notifie l'équipe Slack.",
+      "tech": ["typescript", "qwen3-coder-next", "glitchtip", "bitbucket api", "slack"],
+      "favicon": "/favicons/virgil.svg"
     }
   ],
   "education": [
@@ -152,9 +223,15 @@
       "url": "https://www.spaceappschallenge.org/2025/"
     },
     {
-      "text": "participation, défi {0} — volet entrepreneuriat étudiant",
+      "text": "participation, défi {0} — volet entrepreneuriat étudiant (2025)",
       "linkLabel": "osentreprendre",
       "url": "https://www.osentreprendre.quebec/defi-osentreprendre/volet/etudiant/"
+    },
+    {
+      "text": "jury, défi {0} — volet entrepreneuriat étudiant (2025)",
+      "linkLabel": "osentreprendre",
+      "url": "https://www.osentreprendre.quebec/defi-osentreprendre/volet/etudiant/",
+      "description": "If you can't beat them, join them. refusé comme participant, puis invité comme jury. shoutout spektrum 💎🤍"
     },
     {
       "text": "1re place, {0} — hackathon botpress, québec (mars 2026)",
