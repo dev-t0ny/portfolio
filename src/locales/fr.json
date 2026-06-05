@@ -39,16 +39,13 @@
   },
   "experiences": [
     {
-      "title": "agentic engineering lead",
+      "title": "cofondateur & CMO",
       "period": "jan 2026 – présent",
-      "company": "spektrum",
-      "website": "https://spektrummedia.com",
+      "company": "astrale",
       "duties": [
-        "gestion d'infrastructure cloud avec AWS (SES, S3, IAM) et Cloudflare",
-        "développement backend en C# avec .NET",
-        "développement frontend avec Vue.js",
-        "implémentation de systèmes de gestion de contenu",
-        "proposé et dirigé le développement de Homard Cloud, une plateforme d'hébergement d'IA — conception d'une infrastructure cloud évolutive avec Kubernetes"
+        "cofondation et direction marketing d'Astrale",
+        "stratégie go-to-market, positionnement produit et acquisition",
+        "développement de partenariats, contenu et opérations de croissance"
       ]
     },
     {
@@ -239,6 +236,10 @@
       "url": "https://bphacks.com/",
       "secondaryLinkLabel": "voir le post",
       "secondaryUrl": "https://www.linkedin.com/posts/antoine-boudreau-467b2a28b_bphacks-botpress-hackathon-activity-7439014480337911808-7WXU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ33A8BBhSiZLASft5H3w7s9mFLLsEVhpI"
+    },
+    {
+      "title": "victoire, MPC Hacks — hackathon sponsorisé par Dialogue (2026)",
+      "description": ""
     },
     {
       "title": "bénévolat, portes ouvertes du cégep garneau (2025, 2026)",
