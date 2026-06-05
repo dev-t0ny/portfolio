@@ -49,6 +49,19 @@
       ]
     },
     {
+      "title": "agentic engineering lead",
+      "period": "jan 2026",
+      "company": "spektrum",
+      "website": "https://spektrummedia.com",
+      "duties": [
+        "gestion d'infrastructure cloud avec AWS (SES, S3, IAM) et Cloudflare",
+        "développement backend en C# avec .NET",
+        "développement frontend avec Vue.js",
+        "implémentation de systèmes de gestion de contenu",
+        "proposé et dirigé le développement de Homard Cloud, une plateforme d'hébergement d'IA — conception d'une infrastructure cloud évolutive avec Kubernetes"
+      ]
+    },
+    {
       "title": "cto",
       "period": "dec. 2025 – présent",
       "company": "beau & bon",
@@ -238,8 +251,9 @@
       "secondaryUrl": "https://www.linkedin.com/posts/antoine-boudreau-467b2a28b_bphacks-botpress-hackathon-activity-7439014480337911808-7WXU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ33A8BBhSiZLASft5H3w7s9mFLLsEVhpI"
     },
     {
-      "title": "victoire, MPC Hacks — hackathon sponsorisé par Dialogue (2026)",
-      "description": ""
+      "text": "1re place, MPC Hacks — hackathon Major League Hacking à Montréal, projet {0} sponsorisé par Dialogue (2026)",
+      "linkLabel": "Dialogue FastCare",
+      "url": "https://devpost.com/software/dialogue-fastcare"
     },
     {
       "title": "bénévolat, portes ouvertes du cégep garneau (2025, 2026)",
