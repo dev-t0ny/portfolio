@@ -502,11 +502,8 @@ onBeforeUnmount(() => {
                 </li>
             </ul>
 
-            <div class="mt-10">
-                <h3 class="font-mono text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500 mb-5">
-                    {{ t("certifications_title") }}
-                </h3>
-                <ul class="space-y-4 text-slate-600 dark:text-slate-300">
+            <div class="mt-6">
+                <ul class="space-y-3 text-slate-600 dark:text-slate-300">
                     <li
                         v-for="certification in certifications"
                         :key="certification.credentialId"
@@ -522,12 +519,6 @@ onBeforeUnmount(() => {
                             >
                                 {{ certification.title }}
                             </a>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                                {{ certification.issuer }} — {{ certification.issued }}
-                            </p>
-                            <p class="text-xs font-mono text-slate-400 dark:text-slate-500 mt-1">
-                                {{ t("credential_id") }}: {{ certification.credentialId }}
-                            </p>
                         </div>
                     </li>
                 </ul>

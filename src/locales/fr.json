@@ -18,8 +18,6 @@
     "distinctions": "distinctions & participations"
   },
   "projects_intro": "du premier site vitrine aux agents autonomes self-hosted: une timeline de ce que j'ai ship, en prod ou en prototype, et de comment mon scope a monté.",
-  "certifications_title": "licences et certifications",
-  "credential_id": "identifiant du diplôme",
   "project_sort": {
     "chronology": "chrono",
     "difficulty": "difficulté",
@@ -226,28 +224,24 @@
     {
       "title": "Claude Code in Action",
       "issuer": "Anthropic",
-      "issued": "émise le avr. 2026",
       "credentialId": "42a6fve88386",
       "url": "https://verify.skilljar.com/c/42a6fve88386"
     },
     {
       "title": "Introduction to Model Context Protocol",
       "issuer": "Anthropic",
-      "issued": "émise le avr. 2026",
       "credentialId": "i5ag7sv9ddti",
       "url": "https://verify.skilljar.com/c/i5ag7sv9ddti"
     },
     {
       "title": "Building with the Claude API",
       "issuer": "Anthropic",
-      "issued": "émise le avr. 2026",
       "credentialId": "b2wsbspzmi3t",
       "url": "https://verify.skilljar.com/c/b2wsbspzmi3t"
     },
     {
       "title": "Introduction to agent skills",
       "issuer": "Anthropic",
-      "issued": "émise le avr. 2026",
       "credentialId": "yg96nxjiwa7q",
       "url": "https://verify.skilljar.com/c/yg96nxjiwa7q"
     }
@@ -283,7 +277,7 @@
       "secondaryUrl": "https://www.linkedin.com/posts/antoine-boudreau-467b2a28b_bphacks-botpress-hackathon-activity-7439014480337911808-7WXU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ33A8BBhSiZLASft5H3w7s9mFLLsEVhpI"
     },
     {
-      "text": "1re place, MPC Hacks — hackathon Major League Hacking à Montréal, projet {0} sponsorisé par Dialogue (2026)",
+      "text": "1re place, MPC Hacks — hackathon Major League Hacking, projet {0} sponsorisé par Dialogue (mai 2026)",
       "linkLabel": "Dialogue FastCare",
       "url": "https://devpost.com/software/dialogue-fastcare"
     },
