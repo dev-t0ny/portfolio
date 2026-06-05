@@ -18,6 +18,8 @@
     "distinctions": "distinctions & participations"
   },
   "projects_intro": "du premier site vitrine aux agents autonomes self-hosted: une timeline de ce que j'ai ship, en prod ou en prototype, et de comment mon scope a monté.",
+  "certifications_title": "licences et certifications",
+  "credential_id": "identifiant du diplôme",
   "project_sort": {
     "chronology": "chrono",
     "difficulty": "difficulté",
@@ -219,6 +221,36 @@
   ],
   "education": [
     "dec en informatique - cégep garneau (2023-2026), cheminement DEC+BAC"
+  ],
+  "certifications": [
+    {
+      "title": "Claude Code in Action",
+      "issuer": "Anthropic",
+      "issued": "émise le avr. 2026",
+      "credentialId": "42a6fve88386",
+      "url": "https://verify.skilljar.com/c/42a6fve88386"
+    },
+    {
+      "title": "Introduction to Model Context Protocol",
+      "issuer": "Anthropic",
+      "issued": "émise le avr. 2026",
+      "credentialId": "i5ag7sv9ddti",
+      "url": "https://verify.skilljar.com/c/i5ag7sv9ddti"
+    },
+    {
+      "title": "Building with the Claude API",
+      "issuer": "Anthropic",
+      "issued": "émise le avr. 2026",
+      "credentialId": "b2wsbspzmi3t",
+      "url": "https://verify.skilljar.com/c/b2wsbspzmi3t"
+    },
+    {
+      "title": "Introduction to agent skills",
+      "issuer": "Anthropic",
+      "issued": "émise le avr. 2026",
+      "credentialId": "yg96nxjiwa7q",
+      "url": "https://verify.skilljar.com/c/yg96nxjiwa7q"
+    }
   ],
   "distinctions": [
     "1re place, compétition de programmation - cégep garneau (avr. 2025)",

@@ -18,6 +18,8 @@
     "distinctions": "honors & involvements"
   },
   "projects_intro": "from the first studio website to self-hosted autonomous agents: a timeline of what I've shipped, what reached prod, and how my scope evolved.",
+  "certifications_title": "licenses and certifications",
+  "credential_id": "credential id",
   "project_sort": {
     "chronology": "chrono",
     "difficulty": "difficulty",
@@ -219,6 +221,36 @@
   ],
   "education": [
     "dec in computer science - cégep garneau (2023-2026), DEC+BAC pathway"
+  ],
+  "certifications": [
+    {
+      "title": "Claude Code in Action",
+      "issuer": "Anthropic",
+      "issued": "issued Apr 2026",
+      "credentialId": "42a6fve88386",
+      "url": "https://verify.skilljar.com/c/42a6fve88386"
+    },
+    {
+      "title": "Introduction to Model Context Protocol",
+      "issuer": "Anthropic",
+      "issued": "issued Apr 2026",
+      "credentialId": "i5ag7sv9ddti",
+      "url": "https://verify.skilljar.com/c/i5ag7sv9ddti"
+    },
+    {
+      "title": "Building with the Claude API",
+      "issuer": "Anthropic",
+      "issued": "issued Apr 2026",
+      "credentialId": "b2wsbspzmi3t",
+      "url": "https://verify.skilljar.com/c/b2wsbspzmi3t"
+    },
+    {
+      "title": "Introduction to agent skills",
+      "issuer": "Anthropic",
+      "issued": "issued Apr 2026",
+      "credentialId": "yg96nxjiwa7q",
+      "url": "https://verify.skilljar.com/c/yg96nxjiwa7q"
+    }
   ],
   "distinctions": [
     "1st place, programming competition - cégep garneau (apr 2025)",

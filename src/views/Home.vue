@@ -26,6 +26,7 @@ const contact = computed(() => tm("contact") as any);
 const experiences = computed(() => tm("experiences") as any[]);
 const projects = computed(() => tm("projects") as Project[]);
 const education = computed(() => tm("education") as string[]);
+const certifications = computed(() => tm("certifications") as any[]);
 const distinctions = computed(() => tm("distinctions") as any[]);
 
 const openExp = ref<number>(0);
@@ -500,6 +501,37 @@ onBeforeUnmount(() => {
                     <span>{{ edu }}</span>
                 </li>
             </ul>
+
+            <div class="mt-10">
+                <h3 class="font-mono text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500 mb-5">
+                    {{ t("certifications_title") }}
+                </h3>
+                <ul class="space-y-4 text-slate-600 dark:text-slate-300">
+                    <li
+                        v-for="certification in certifications"
+                        :key="certification.credentialId"
+                        class="flex items-start gap-3"
+                    >
+                        <span class="text-slate-300 dark:text-slate-600 mt-1.5">—</span>
+                        <div>
+                            <a
+                                :href="certification.url"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-slate-800 dark:text-slate-200 underline underline-offset-3 decoration-slate-400 dark:decoration-slate-500 hover:decoration-slate-600 dark:hover:decoration-slate-300 transition-colors duration-200"
+                            >
+                                {{ certification.title }}
+                            </a>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                                {{ certification.issuer }} — {{ certification.issued }}
+                            </p>
+                            <p class="text-xs font-mono text-slate-400 dark:text-slate-500 mt-1">
+                                {{ t("credential_id") }}: {{ certification.credentialId }}
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section id="distinctions" class="scroll-mt-24">
