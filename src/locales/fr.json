@@ -50,7 +50,7 @@
     },
     {
       "title": "agentic engineering lead",
-      "period": "jan 2026",
+      "period": "jan 2026 – mai 2026",
       "company": "spektrum",
       "website": "https://spektrummedia.com",
       "duties": [
@@ -280,6 +280,17 @@
       "text": "1re place, MPC Hacks — hackathon Major League Hacking, projet {0} sponsorisé par Dialogue (mai 2026)",
       "linkLabel": "Dialogue FastCare",
       "url": "https://devpost.com/software/dialogue-fastcare"
+    },
+    {
+      "text": "conférence, {0} — comment rentrer des agents IA dans ton entreprise concrètement (juil. 2026)",
+      "linkLabel": "ai geeks #4",
+      "url": "https://www.youtube.com/watch?v=grgYNkc6Eq4"
+    },
+    {
+      "text": "bénévole, {0} — comité expérience membre (2026 – présent)",
+      "linkLabel": "jccq",
+      "url": "https://www.jccq.qc.ca/",
+      "description": "géré la campagne meta ads de la jeune chambre, accueilli les membres lors des événements"
     },
     {
       "title": "bénévolat, portes ouvertes du cégep garneau (2025, 2026)",
