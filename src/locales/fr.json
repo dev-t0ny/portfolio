@@ -1,6 +1,6 @@
 {
   "location": "québec, ca",
-  "intro": "je fais pas du code, je fais des produits.",
+  "intro": "entrepreneur. je fais pas du code, je fais des produits, et je gère des projets pour le secteur manufacturier.",
   "links": {
     "email": "email",
     "github": "github",
@@ -46,6 +46,14 @@
         "cofondation et direction marketing d'Astrale",
         "stratégie go-to-market, positionnement produit et acquisition",
         "développement de partenariats, contenu et opérations de croissance"
+      ]
+    },
+    {
+      "title": "cofondateur",
+      "period": "présent",
+      "company": "boibo",
+      "duties": [
+        "cofondation de Boibo"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "location": "quebec city, ca",
-  "intro": "i don't just code, i ship products.",
+  "intro": "entrepreneur. i don't just code, i ship products, and i manage projects for the manufacturing sector.",
   "links": {
     "email": "email",
     "github": "github",
@@ -46,6 +46,14 @@
         "co-founded Astrale and lead marketing",
         "go-to-market strategy, product positioning, and acquisition",
         "partnership development, content, and growth operations"
+      ]
+    },
+    {
+      "title": "co-founder",
+      "period": "present",
+      "company": "boibo",
+      "duties": [
+        "co-founded Boibo"
       ]
     },
     {
