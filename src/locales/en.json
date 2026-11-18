@@ -223,6 +223,18 @@
       "description": "autonomous bug-fixing and monitoring agent designed and deployed at spektrum. watches GlitchTip, analyzes production errors with a self-hosted LLM, generates Bitbucket PRs, evaluates fix risk, and notifies the team on Slack.",
       "tech": ["typescript", "qwen3-coder-next", "glitchtip", "bitbucket api", "slack"],
       "favicon": "/favicons/virgil.svg"
+    },
+    {
+      "order": 11,
+      "name": "zayat aroma",
+      "period": "2026",
+      "impact": "live e-commerce, shop + pro accounts",
+      "impactScore": 4,
+      "difficultyScore": 4,
+      "description": "new e-commerce site for Zayat Aroma, a Québec essential-oils company. built by Astrale on Medusa and next.js, bilingual fr/en, with a consumer shop and commercial accounts. live in production since nov 16, 2026, replacing their former Drupal site.",
+      "tech": ["medusa", "next.js"],
+      "url": "https://www.zayataroma.com",
+      "favicon": "/favicons/zayat-aroma.png"
     }
   ],
   "education": [
