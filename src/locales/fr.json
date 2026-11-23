@@ -1,6 +1,6 @@
 {
   "location": "québec, ca",
-  "intro": "entrepreneur. je fais pas du code, je fais des produits, et je gère des projets pour le secteur manufacturier.",
+  "intro": "entrepreneur. je bâtis et j'opère des boutiques e-commerce, et je fais des produits IA pour le secteur manufacturier.",
   "links": {
     "email": "email",
     "github": "github",
@@ -11,7 +11,9 @@
     "title": "lettre de recommandation"
   },
   "theme_title": "changer le thème",
+  "ecommerce_intro": "des boutiques en ligne que j'ai bâties et que j'opère: du storefront au paiement, jusqu'aux opérations et au marketing.",
   "headings": {
+    "ecommerce": "e-commerce",
     "experience": "expérience",
     "projects": "projets",
     "education": "formation",
@@ -62,11 +64,12 @@
       ]
     },
     {
-      "title": "cto",
+      "title": "cofondateur",
       "period": "dec. 2025 – présent",
       "company": "beau & bon",
       "website": "https://beauetbon.ca",
       "duties": [
+        "cofondation de Beau & Bon: produit, e-commerce, ateliers, opérations et marketing",
         "mandat complet de refonte du site web pour adapter le site à un haut traffic",
         "gestion du front-end, back-end et devops (nuxt, node.js, express)",
         "gestion de transactions avec stripe",
@@ -121,20 +124,22 @@
       "impact": "e-commerce actif, trafic + paiements",
       "impactScore": 4,
       "difficultyScore": 3,
-      "description": "premier e-commerce en vraie prod: frontend next.js branché sur Shopify, personnalisation de produits, boutique encore active aujourd'hui avec des centaines de visiteurs par jour.",
+      "description": "premier e-commerce en vraie prod: frontend next.js branché sur Shopify, personnalisation de produits, boutique encore active aujourd'hui avec des centaines de visiteurs par jour. la marque est devenue Monsieur Sablé.",
       "tech": ["next.js", "graphql", "shopify api"],
-      "url": "https://lessablesdelostidfrancais.com/"
+      "url": "https://monsieursable.com/",
+      "ecommerce": true
     },
     {
       "order": 3,
       "name": "beau & bon",
       "period": "2025",
-      "impact": "e-commerce prod, haut trafic",
+      "impact": "e-commerce prod, réservations + cartes-cadeaux",
       "impactScore": 4,
       "difficultyScore": 3,
-      "description": "site e-commerce Beau & Bon bâti sur Vercel Commerce et Shopify. site en production, encaisse les commandes et tient le trafic.",
-      "tech": ["next.js", "vercel commerce", "shopify api"],
-      "url": "https://beauetbon.ca/"
+      "description": "j'ai cofondé Beau & Bon et rebâti le site en Nuxt avec Stripe pour les réservations d'ateliers olfactifs et instinctifs, les cartes-cadeaux et la boutique. les ventes de produits en ligne sont actuellement en pause; les cartes-cadeaux restent en vente.",
+      "tech": ["nuxt", "node.js", "stripe"],
+      "url": "https://beauetbon.ca/",
+      "ecommerce": true
     },
     {
       "order": 4,
@@ -156,7 +161,8 @@
       "difficultyScore": 3,
       "description": "grosse participation au site e-commerce d'une marque locale de vêtements. site en prod, utilisé pour des drops, avec un vrai volume de ventes qui passait par la plateforme.",
       "tech": ["vue.js", "tailwind css"],
-      "url": "https://backdoor-project.com"
+      "url": "https://backdoor-project.com",
+      "ecommerce": true
     },
     {
       "order": 6,
@@ -226,7 +232,21 @@
       "description": "nouveau site e-commerce de Zayat Aroma, entreprise québécoise d'huiles essentielles. bâti par Astrale sur Medusa et next.js, bilingue fr/en, avec boutique et comptes commerciaux. en production depuis le 16 nov. 2026, en remplacement de l'ancien site Drupal.",
       "tech": ["medusa", "next.js"],
       "url": "https://www.zayataroma.com",
-      "favicon": "/favicons/zayat-aroma.png"
+      "favicon": "/favicons/zayat-aroma.png",
+      "ecommerce": true
+    },
+    {
+      "order": 12,
+      "name": "refuge alsa",
+      "period": "2026",
+      "impact": "e-commerce prod, boutique + adoption",
+      "impactScore": 4,
+      "difficultyScore": 3,
+      "description": "site du Refuge ALSA, refuge à but non lucratif pour lapins à Québec. front-end Nuxt avec Shopify en headless: informations sur l'adoption et les familles d'accueil, et boutique de produits pour lapins. chaque achat finance les soins du refuge, avec livraison partout au Canada ou ramassage à la boutique de Québec.",
+      "tech": ["nuxt", "shopify"],
+      "url": "https://refugealsa.com",
+      "favicon": "/favicons/refuge-alsa.png",
+      "ecommerce": true
     }
   ],
   "education": [

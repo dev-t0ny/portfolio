@@ -1,30 +1,23 @@
 <script setup lang="ts">
 import { ref, computed, nextTick, watch, onMounted, onBeforeUnmount } from "vue";
 import { useI18n } from "vue-i18n";
+import ProjectCard from "../components/ProjectCard.vue";
+import type { Project } from "../types/project";
 
 const { t, tm } = useI18n();
 
 type ProjectSortDirection = "asc" | "desc";
 type ProjectSortMode = "chronology" | "difficulty";
 
-type Project = {
-    order: number;
-    name: string;
-    period: string;
-    impact: string;
-    impactScore: number;
-    difficultyScore: number;
-    description: string;
-    tech: string[];
-    url?: string;
-    favicon?: string;
-};
-
 // On utilise 'computed' pour que la langue change dynamiquement
 // Le 'as any' est nécessaire ici car tm() retourne un type générique
 const contact = computed(() => tm("contact") as any);
 const experiences = computed(() => tm("experiences") as any[]);
-const projects = computed(() => tm("projects") as Project[]);
+const allProjects = computed(() => tm("projects") as Project[]);
+const projects = computed(() => allProjects.value.filter((project) => !project.ecommerce));
+const ecommerceProjects = computed(() =>
+    allProjects.value.filter((project) => project.ecommerce).sort((left, right) => right.order - left.order),
+);
 const education = computed(() => tm("education") as string[]);
 const certifications = computed(() => tm("certifications") as any[]);
 const distinctions = computed(() => tm("distinctions") as any[]);
@@ -116,22 +109,6 @@ const uniqueProjectPeriods = computed(() => {
     return [...periods].sort();
 });
 
-const getProjectLinkAttrs = (project: Project) =>
-    project.url
-        ? { href: project.url, target: "_blank", rel: "noopener noreferrer" }
-        : {};
-
-const getProjectFavicon = (project: Project) => {
-    if (project.favicon) {
-        return project.favicon;
-    }
-
-    if (project.url) {
-        return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(project.url)}&sz=64`;
-    }
-
-    return "";
-};
 
 watch(
     sortedProjects,
@@ -225,6 +202,25 @@ onBeforeUnmount(() => {
                     <span class="absolute -bottom-0.5 left-0 w-0 h-px bg-slate-700 dark:bg-slate-300 transition-all duration-300 group-hover:w-full" />
                 </a>
             </nav>
+        </section>
+
+        <section id="ecommerce" class="scroll-mt-24">
+            <div class="mb-10">
+                <h2 class="text-2xl font-light text-slate-800 dark:text-slate-100 tracking-tight">
+                    {{ t("headings.ecommerce") }}
+                </h2>
+                <p class="mt-3 max-w-xl text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {{ t("ecommerce_intro") }}
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10">
+                <ProjectCard
+                    v-for="project in ecommerceProjects"
+                    :key="project.name"
+                    :project="project"
+                    show-period
+                />
+            </div>
         </section>
 
         <section id="experience" class="scroll-mt-24">
@@ -399,91 +395,13 @@ onBeforeUnmount(() => {
                 move-class="project-card-move"
                 class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10"
             >
-                <component
+                <ProjectCard
                     v-for="(project, projectIndex) in sortedProjects"
-                    :is="project.url ? 'a' : 'article'"
                     :key="project.name"
-                    :data-project-period="project.period"
-                    v-bind="getProjectLinkAttrs(project)"
-                    :class="[
-                        'block border-b border-slate-200 dark:border-slate-800/60 py-5',
-                        project.url ? 'group cursor-pointer' : 'cursor-default',
-                    ]"
-                >
-                    <div class="min-w-0">
-                        <p
-                            v-if="shouldDisplayProjectPeriod(projectIndex)"
-                            class="mb-3 font-mono text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500"
-                        >
-                            {{ project.period }}
-                        </p>
-
-                            <div class="flex items-start justify-between gap-4">
-                                <div class="flex items-center gap-2.5">
-                                    <img
-                                        v-if="getProjectFavicon(project)"
-                                        :src="getProjectFavicon(project)"
-                                        :alt="`${project.name} favicon`"
-                                        class="h-4 w-4 shrink-0 [filter:drop-shadow(0_0_1px_rgba(0,0,0,0.45))_drop-shadow(0_0_1px_rgba(255,255,255,0.35))]"
-                                        loading="lazy"
-                                    />
-                                    <h3
-                                        :class="[
-                                            'text-lg font-normal tracking-tight transition-colors duration-300 text-slate-500 dark:text-slate-400',
-                                            project.url ? 'group-hover:text-slate-800 dark:group-hover:text-slate-100' : '',
-                                        ]"
-                                    >{{ project.name }}</h3>
-                                </div>
-                                <svg
-                                    v-if="project.url"
-                                    class="mt-1 w-3.5 h-3.5 shrink-0 text-slate-300 dark:text-slate-600 transition-colors duration-300 group-hover:text-slate-400 dark:group-hover:text-slate-500"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                >
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </div>
-
-                            <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] font-mono text-slate-400 dark:text-slate-500">
-                                <span v-if="projectSortMode === 'difficulty'">
-                                    {{ project.period }}
-                                </span>
-                                <div class="flex items-center gap-1.5">
-                                    <div class="flex items-center gap-0.5" aria-hidden="true">
-                                        <span
-                                            v-for="impactLevel in 5"
-                                            :key="impactLevel"
-                                            :class="[
-                                                'h-1.5 w-1.5 rounded-full',
-                                                impactLevel <= project.impactScore
-                                                    ? 'bg-slate-500 dark:bg-slate-400'
-                                                    : 'bg-slate-200 dark:bg-slate-800',
-                                            ]"
-                                        />
-                                    </div>
-                                    <span>{{ project.impact }}</span>
-                                </div>
-                            </div>
-
-                            <p
-                                :class="[
-                                    'text-sm mt-2 text-slate-400 dark:text-slate-600 transition-colors duration-300 leading-relaxed',
-                                    project.url ? 'group-hover:text-slate-500 dark:group-hover:text-slate-400' : '',
-                                ]"
-                            >
-                                {{ project.description }}
-                            </p>
-
-                            <div class="mt-3 flex flex-wrap gap-1.5">
-                                <span
-                                    v-for="tech in project.tech"
-                                    :key="tech"
-                                    class="text-[11px] bg-slate-100 dark:bg-slate-900/70 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded font-mono"
-                                >
-                                    {{ tech }}
-                                </span>
-                            </div>
-                    </div>
-                </component>
+                    :project="project"
+                    :show-period-heading="shouldDisplayProjectPeriod(projectIndex)"
+                    :show-period="projectSortMode === 'difficulty'"
+                />
             </TransitionGroup>
         </section>
 

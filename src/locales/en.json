@@ -1,6 +1,6 @@
 {
   "location": "quebec city, ca",
-  "intro": "entrepreneur. i don't just code, i ship products, and i manage projects for the manufacturing sector.",
+  "intro": "entrepreneur. i build and run e-commerce stores, and i ship AI products for the manufacturing sector.",
   "links": {
     "email": "email",
     "github": "github",
@@ -11,7 +11,9 @@
     "title": "recommendation letter"
   },
   "theme_title": "change theme",
+  "ecommerce_intro": "online stores I've built and run: from storefront to checkout, through operations and marketing.",
   "headings": {
+    "ecommerce": "e-commerce",
     "experience": "experience",
     "projects": "projects",
     "education": "education",
@@ -62,11 +64,12 @@
       ]
     },
     {
-      "title": "cto",
+      "title": "co-founder",
       "period": "dec 2025 – present",
       "company": "beau & bon",
       "website": "https://beauetbon.ca",
       "duties": [
+        "co-founded Beau & Bon: product, e-commerce, workshops, operations and marketing",
         "complete website redesign project to handle high traffic",
         "front-end, back-end and devops management (nuxt, node.js, express)",
         "stripe transaction management",
@@ -121,20 +124,22 @@
       "impact": "live e-commerce, traffic + payments",
       "impactScore": 4,
       "difficultyScore": 3,
-      "description": "first real e-commerce project in production: next.js storefront on top of Shopify, product customization, and a store that still serves hundreds of visitors per day.",
+      "description": "first real e-commerce project in production: next.js storefront on top of Shopify, product customization, and a store that still serves hundreds of visitors per day. the brand is now Monsieur Sablé.",
       "tech": ["next.js", "graphql", "shopify api"],
-      "url": "https://lessablesdelostidfrancais.com/"
+      "url": "https://monsieursable.com/",
+      "ecommerce": true
     },
     {
       "order": 3,
       "name": "beau & bon",
       "period": "2025",
-      "impact": "prod e-commerce, high traffic",
+      "impact": "live e-commerce, bookings + gift cards",
       "impactScore": 4,
       "difficultyScore": 3,
-      "description": "Beau & Bon e-commerce site built on Vercel Commerce and Shopify. live in production, processing orders and handling traffic.",
-      "tech": ["next.js", "vercel commerce", "shopify api"],
-      "url": "https://beauetbon.ca/"
+      "description": "i co-founded Beau & Bon and rebuilt the site in Nuxt with Stripe for olfactory and instinctive workshop bookings, gift certificates and the shop. online product sales are currently paused; gift certificates remain available.",
+      "tech": ["nuxt", "node.js", "stripe"],
+      "url": "https://beauetbon.ca/",
+      "ecommerce": true
     },
     {
       "order": 4,
@@ -156,7 +161,8 @@
       "difficultyScore": 3,
       "description": "major contribution to the e-commerce site of a local clothing brand. shipped to production, used for drops, and handled real sales volume through the platform.",
       "tech": ["vue.js", "tailwind css"],
-      "url": "https://backdoor-project.com"
+      "url": "https://backdoor-project.com",
+      "ecommerce": true
     },
     {
       "order": 6,
@@ -226,7 +232,21 @@
       "description": "new e-commerce site for Zayat Aroma, a Québec essential-oils company. built by Astrale on Medusa and next.js, bilingual fr/en, with a consumer shop and commercial accounts. live in production since nov 16, 2026, replacing their former Drupal site.",
       "tech": ["medusa", "next.js"],
       "url": "https://www.zayataroma.com",
-      "favicon": "/favicons/zayat-aroma.png"
+      "favicon": "/favicons/zayat-aroma.png",
+      "ecommerce": true
+    },
+    {
+      "order": 12,
+      "name": "refuge alsa",
+      "period": "2026",
+      "impact": "live e-commerce, shop + adoptions",
+      "impactScore": 4,
+      "difficultyScore": 3,
+      "description": "site for Refuge ALSA, a non-profit rabbit shelter in Québec. Nuxt front end with headless Shopify: adoption and foster family information, plus a shop for rabbit products. every purchase funds the shelter’s care, with shipping across Canada or pickup at the Québec store.",
+      "tech": ["nuxt", "shopify"],
+      "url": "https://refugealsa.com",
+      "favicon": "/favicons/refuge-alsa.png",
+      "ecommerce": true
     }
   ],
   "education": [
