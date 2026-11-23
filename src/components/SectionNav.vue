@@ -6,6 +6,7 @@ const { t } = useI18n();
 
 const sections = computed(() => [
     { id: "intro", label: "intro" },
+    { id: "ecommerce", label: t("headings.ecommerce") },
     { id: "experience", label: t("headings.experience") },
     { id: "projects", label: t("headings.projects") },
     { id: "education", label: t("headings.education") },
